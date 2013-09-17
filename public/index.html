@@ -1,241 +1,250 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <title>Ruby on Rails: Welcome aboard</title>
-    <style type="text/css" media="screen">
-      body {
-        margin: 0;
-        margin-bottom: 25px;
-        padding: 0;
-        background-color: #f0f0f0;
-        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
-        font-size: 13px;
-        color: #333;
-      }
+<head>
+<title>Visionary Eyecare and Surgery</title>
+<script type="text/javascript">
 
-      h1 {
-        font-size: 28px;
-        color: #000;
-      }
+function newImage(arg) {
+        if (document.images) {
+                rslt = new Image();
+                rslt.src = arg;
+                return rslt;
+        }
+}
 
-      a  {color: #03c}
-      a:hover {
-        background-color: #03c;
-        color: white;
-        text-decoration: none;
-      }
+function changeImages() {
+        if (document.images && (preloadFlag == true)) {
+                for (var i=0; i<changeImages.arguments.length; i+=2) {
+                        document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+                }
+        }
+}
 
+var preloadFlag = false;
+function preloadImages() {
+        if (document.images) {
+                home_over = newImage("images/buttons/home_over.gif");
+                surgeon_over = newImage("images/buttons/surgeon_over.gif");
+                testimony_over = newImage("images/buttons/testimony_over.gif");
+                conditions_over = newImage("images/buttons/conditions_over.gif");
+                services_over = newImage("images/buttons/services_over.gif");
+                contact_over  = newImage("images/buttons/contact_over.gif");       
+                
+                home_conditions8 = newImage("images/main/conditions/home_graphics_08.gif");       
+                home_conditions9 = newImage("images/main/conditions/home_graphics_09.gif");  
+                home_conditions11 = newImage("images/main/conditions/home_graphics_11.gif");  
+                home_conditions12 = newImage("images/main/conditions/home_graphics_12.gif");  
+                
+                home_contact4 = newImage("images/main/contact/home_graphics_04.gif");       
+                home_contact5 = newImage("images/main/contact/home_graphics_05.gif");
+                home_contact6 = newImage("images/main/contact/home_graphics_06.gif");
+                home_contact7 = newImage("images/main/contact/home_graphics_07.gif");
+                home_contact8 = newImage("images/main/contact/home_graphics_08.gif");
+                home_contact9 = newImage("images/main/contact/home_graphics_09.gif");
+                home_contact11 = newImage("images/main/contact/home_graphics_11.gif");
+                home_contact12 = newImage("images/main/contact/home_graphics_12.gif");
+                
+                
+                home_physician6 = newImage("images/main/physician/home_graphics_06.gif");
+                home_physician8 = newImage("images/main/physician/home_graphics_08.gif");
+                home_physician9 = newImage("images/main/physician/home_graphics_09.gif");
+                home_physician11 = newImage("images/main/physician/home_graphics_11.gif");
+                home_physician12 = newImage("images/main/physician/home_graphics_12.gif");
+                
+                home_services1 = newImage("images/main/services/home_graphics_01.gif");
+                home_services2 = newImage("images/main/services/home_graphics_02.gif");
+                home_services4 = newImage("images/main/services/home_graphics_04.gif");
+                home_services5 = newImage("images/main/services/home_graphics_05.gif");
+                home_services7 = newImage("images/main/services/home_graphics_07.gif");
+                home_services8 = newImage("images/main/services/home_graphics_08.gif");
+                home_services11 = newImage("images/main/services/home_graphics_11.gif");
+                                
+                home_testimony1 = newImage("images/main/testimony/home_graphics_01.gif");
+                home_testimony4 = newImage("images/main/testimony/home_graphics_04.gif");
+                home_testimony5 = newImage("images/main/testimony/home_graphics_05.gif");
+                home_testimony7 = newImage("images/main/testimony/home_graphics_07.gif");
+                home_testimony8 = newImage("images/main/testimony/home_graphics_08.gif");
+                
+                preloadFlag = true;
+        }
+}
 
-      #page {
-        background-color: #f0f0f0;
-        width: 750px;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      #content {
-        float: left;
-        background-color: white;
-        border: 3px solid #aaa;
-        border-top: none;
-        padding: 25px;
-        width: 500px;
-      }
-
-      #sidebar {
-        float: right;
-        width: 175px;
-      }
-
-      #footer {
-        clear: both;
-      }
-
-      #header, #about, #getting-started {
-        padding-left: 75px;
-        padding-right: 30px;
-      }
-
-
-      #header {
-        background-image: url("assets/rails.png");
-        background-repeat: no-repeat;
-        background-position: top left;
-        height: 64px;
-      }
-      #header h1, #header h2 {margin: 0}
-      #header h2 {
-        color: #888;
-        font-weight: normal;
-        font-size: 16px;
-      }
-
-
-      #about h3 {
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 14px;
-      }
-
-      #about-content {
-        background-color: #ffd;
-        border: 1px solid #fc0;
-        margin-left: -55px;
-        margin-right: -10px;
-      }
-      #about-content table {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 11px;
-        border-collapse: collapse;
-      }
-      #about-content td {
-        padding: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-      }
-      #about-content td.name  {color: #555}
-      #about-content td.value {color: #000}
-
-      #about-content ul {
-        padding: 0;
-        list-style-type: none;
-      }
-
-      #about-content.failure {
-        background-color: #fcc;
-        border: 1px solid #f00;
-      }
-      #about-content.failure p {
-        margin: 0;
-        padding: 10px;
-      }
+</script>
 
 
-      #getting-started {
-        border-top: 1px solid #ccc;
-        margin-top: 25px;
-        padding-top: 15px;
-      }
-      #getting-started h1 {
-        margin: 0;
-        font-size: 20px;
-      }
-      #getting-started h2 {
-        margin: 0;
-        font-size: 14px;
-        font-weight: normal;
-        color: #333;
-        margin-bottom: 25px;
-      }
-      #getting-started ol {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #getting-started li {
-        font-size: 18px;
-        color: #888;
-        margin-bottom: 25px;
-      }
-      #getting-started li h2 {
-        margin: 0;
-        font-weight: normal;
-        font-size: 18px;
-        color: #333;
-      }
-      #getting-started li p {
-        color: #555;
-        font-size: 13px;
-      }
+<style>
+
+	#fronttext {
+		width: 270px;
+		margin-left: 30px;
+		margin-top: 70px;
+	}
+	
+	#fronttext p {
+		font-family: arial,helvetica,sans-serif;
+		font-size: 12px;
+		color: #ffffff;
+		padding-top: 5px;
+		margin-top: 5px;
+		text-align: justify;
+	}
+	
+	#ourmission {
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+	}
+	
+	#frontnav {
+		margin-left: 5px;
+		margin-top: 35px;
+	}
+	
+</style>
+
+<script language="JavaScript">
+
+function popUp(URL) 
+{
+	day = new Date();
+	id = day.getTime();
+	eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=400,left = 490,top = 262');");
+}
+
+</script>
+
+</head>
+<body bgcolor="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"  onload="preloadImages();"><center>
+<table id="topbar" width="800" height="91" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<img src="images/headers/top_left.jpg" width="259" height="91" alt="" border="0"></td>
+<td>
+<img src="images/headers/top_middle.gif" width="299" height="91" alt="" border="0"></td>
+<td>
+<img src="images/headers/top_right.jpg" width="242" height="91" alt="" border="0"></td>
+</tr>
+</table>
+<table id="menubar" width="800" height="33" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<img name="home" src="images/buttons/home_on.gif" width="85" height="33" alt="Home" border="0"></td>
+		<td>
+			<a href="surgeon.html" onmouseover="changeImages('surgeon', 'images/buttons/surgeon_over.gif'); changeImages('home6', 'images/main/physician/home_graphics_06.gif'); changeImages('home8', 'images/main/physician/home_graphics_08.gif'); changeImages('home9', 'images/main/physician/home_graphics_09.gif'); changeImages('home11', 'images/main/physician/home_graphics_11.gif'); changeImages('home12', 'images/main/physician/home_graphics_12.gif'); return true;"  onmouseout="changeImages('surgeon', 'images/buttons/surgeon_off.gif'); changeImages('home6', 'images/main/home/home_graphics_06.gif'); changeImages('home8', 'images/main/home/home_graphics_08.gif'); changeImages('home9', 'images/main/home/home_graphics_09.gif'); changeImages('home11', 'images/main/home/home_graphics_11.gif'); changeImages('home12', 'images/main/home/home_graphics_12.gif'); return true;"><img name="surgeon"  src="images/buttons/surgeon_off.gif" width="160" height="33" alt="Surgeon" border="0"></a></td>
+		<td>
+			<a href="testimony.html" onmouseover="changeImages('testimony', 'images/buttons/testimony_over.gif'); changeImages('home1', 'images/main/testimony/home_graphics_01.gif'); changeImages('home4', 'images/main/testimony/home_graphics_04.gif'); changeImages('home5', 'images/main/testimony/home_graphics_05.gif'); changeImages('home7', 'images/main/testimony/home_graphics_07.gif'); changeImages('home8', 'images/main/testimony/home_graphics_08.gif'); return true;"  onmouseout="changeImages('testimony', 'images/buttons/testimony_off.gif'); changeImages('home1', 'images/main/home/home_graphics_01.gif'); changeImages('home4', 'images/main/home/home_graphics_04.gif'); changeImages('home5', 'images/main/home/home_graphics_05.gif'); changeImages('home7', 'images/main/home/home_graphics_07.gif'); changeImages('home8', 'images/main/home/home_graphics_08.gif'); return true;"><img name="testimony"  src="images/buttons/testimony_off.gif" width="142" height="33" alt="Testimony" border="0"></a></td>
+		<td>
+			<a href="conditions.html" onmouseover="changeImages('conditions', 'images/buttons/conditions_over.gif'); changeImages('home8', 'images/main/conditions/home_graphics_08.gif'); changeImages('home9', 'images/main/conditions/home_graphics_09.gif'); changeImages('home11', 'images/main/conditions/home_graphics_11.gif'); changeImages('home12', 'images/main/conditions/home_graphics_12.gif'); return true;"  onmouseout="changeImages('conditions', 'images/buttons/conditions_off.gif'); changeImages('home8', 'images/main/home/home_graphics_08.gif'); changeImages('home9', 'images/main/home/home_graphics_09.gif'); changeImages('home11', 'images/main/home/home_graphics_11.gif'); changeImages('home12', 'images/main/home/home_graphics_12.gif'); return true;"><img name="conditions"  src="images/buttons/conditions_off.gif" width="169" height="33" alt="Conditions" border="0"></a></td>
+		<td>
+			<a href="services.html" onmouseover="changeImages('services', 'images/buttons/services_over.gif'); changeImages('home1', 'images/main/services/home_graphics_01.gif'); changeImages('home2', 'images/main/services/home_graphics_02.gif'); changeImages('home4', 'images/main/services/home_graphics_04.gif'); changeImages('home5', 'images/main/services/home_graphics_05.gif'); changeImages('home7', 'images/main/services/home_graphics_07.gif'); changeImages('home8', 'images/main/services/home_graphics_08.gif'); changeImages('home11', 'images/main/services/home_graphics_11.gif'); return true;" onmouseout="changeImages('services', 'images/buttons/services_off.gif'); changeImages('home1', 'images/main/home/home_graphics_01.gif'); changeImages('home2', 'images/main/home/home_graphics_02.gif'); changeImages('home4', 'images/main/home/home_graphics_04.gif'); changeImages('home5', 'images/main/home/home_graphics_05.gif'); changeImages('home7', 'images/main/home/home_graphics_07.gif'); changeImages('home8', 'images/main/home/home_graphics_08.gif'); changeImages('home11', 'images/main/home/home_graphics_11.gif'); return true;"><img name="services"  src="images/buttons/services_off.gif" width="108" height="33" alt="Services" border="0"></a></td>
+		<td>
+			<a href="contact.html" onmouseover="changeImages('contact', 'images/buttons/contact_over.gif'); changeImages('home4', 'images/main/contact/home_graphics_04.gif'); changeImages('home5', 'images/main/contact/home_graphics_05.gif'); changeImages('home6', 'images/main/contact/home_graphics_06.gif'); changeImages('home7', 'images/main/contact/home_graphics_07.gif'); changeImages('home8', 'images/main/contact/home_graphics_08.gif'); changeImages('home9', 'images/main/contact/home_graphics_09.gif'); changeImages('home11', 'images/main/contact/home_graphics_11.gif'); changeImages('home12', 'images/main/contact/home_graphics_12.gif'); return true;" onmouseout="changeImages('contact', 'images/buttons/contact_off.gif'); changeImages('home4', 'images/main/home/home_graphics_04.gif'); changeImages('home5', 'images/main/home/home_graphics_05.gif'); changeImages('home6', 'images/main/home/home_graphics_06.gif'); changeImages('home7', 'images/main/home/home_graphics_07.gif'); changeImages('home8', 'images/main/home/home_graphics_08.gif'); changeImages('home9', 'images/main/home/home_graphics_09.gif'); changeImages('home11', 'images/main/home/home_graphics_11.gif'); changeImages('home12', 'images/main/home/home_graphics_12.gif'); return true;"><img name="contact"  src="images/buttons/contact_off.gif" width="136" height="33" alt="Contact" border="0"></a></td>
+	</tr>
+</table>
+
+<table id="mainpart" width="800" height="393" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td background="images/main_bg.jpg" align="right">
 
 
-      #sidebar ul {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #sidebar ul h3 {
-        margin-top: 25px;
-        font-size: 16px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #ccc;
-      }
-      #sidebar li {
-        list-style-type: none;
-      }
-      #sidebar ul.links li {
-        margin-bottom: 5px;
-      }
 
-      .filename {
-        font-style: italic;
-      }
-    </style>
-    <script type="text/javascript">
-      function about() {
-        info = document.getElementById('about-content');
-        if (window.XMLHttpRequest)
-          { xhr = new XMLHttpRequest(); }
-        else
-          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
-        xhr.open("GET","rails/info/properties",false);
-        xhr.send("");
-        info.innerHTML = xhr.responseText;
-        info.style.display = 'block'
-      }
-    </script>
-  </head>
-  <body>
-    <div id="page">
-      <div id="sidebar">
-        <ul id="sidebar-items">
-          <li>
-            <h3>Browse the documentation</h3>
-            <ul class="links">
-              <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
-              <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
-              <li><a href="http://www.ruby-doc.org/core/">Ruby core</a></li>
-              <li><a href="http://www.ruby-doc.org/stdlib/">Ruby standard library</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+	<table width="100%">
+	<tr>
+	<td width="341" valign="top">
+	
+	<div id="fronttext">
+	<img id="ourmission" width="270" height="30" src="images/ourmission.gif">
+	<p>Because nothing is more important than your eyesight, we are dedicated to combining compassionate patient care with the latest technological advances in medical and surgical eyecare to provide you with the very best possible experience. Come see what a difference we can make for your vision. </p>
+	</div>
+	
+	
+	<table id="frontnav" width="315" height="99" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<a href="javascript:popUp('whatsnew2.html')"><img src="images/main/whatsnew_01.gif" width="315" height="27" border="0" alt=""></a></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/main/whatsnew_02.gif" width="315" height="24" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/main/emaillink_01.gif" width="315" height="20" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="mailto:info@visionarysight.com"><img src="images/main/emaillink_02.gif" width="315" height="28" border="0" alt=""></a></td>
+	</tr>
+	</table>
+	
+	
+	</td>
+	<td valign="top" width="459">
 
-      <div id="content">
-        <div id="header">
-          <h1>Welcome aboard</h1>
-          <h2>You&rsquo;re riding Ruby on Rails!</h2>
-        </div>
 
-        <div id="about">
-          <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
-          <div id="about-content" style="display: none"></div>
-        </div>
 
-        <div id="getting-started">
-          <h1>Getting started</h1>
-          <h2>Here&rsquo;s how to get rolling:</h2>
+	<table id="main_graphics" width="459" height="397" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<img name="home1" src="images/main/home/home_graphics_01.gif" width="152" height="81" alt=""></td>
+		<td>
+			<img name="home2" src="images/main/home/home_graphics_02.gif" width="150" height="81" alt=""></td>
+		<td>
+			<img name="home3" src="images/main/home/home_graphics_03.gif" width="157" height="81" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img name="home4" src="images/main/home/home_graphics_04.gif" width="152" height="77" alt=""></td>
+		<td>
+			<img name="home5" src="images/main/home/home_graphics_05.gif" width="150" height="77" alt=""></td>
+		<td>
+			<img name="home6" src="images/main/home/home_graphics_06.gif" width="157" height="77" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img name="home7" src="images/main/home/home_graphics_07.gif" width="152" height="82" alt=""></td>
+		<td>
+			<img name="home8" src="images/main/home/home_graphics_08.gif" width="150" height="82" alt=""></td>
+		<td>
+			<img name="home9" src="images/main/home/home_graphics_09.gif" width="157" height="82" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img name="home10" src="images/main/home/home_graphics_10.gif" width="152" height="76" alt=""></td>
+		<td>
+			<img name="home11" src="images/main/home/home_graphics_11.gif" width="150" height="76" alt=""></td>
+		<td>
+			<img name="home12" src="images/main/home/home_graphics_12.gif" width="157" height="76" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img name="home13" src="images/main/home/home_graphics_13.gif" width="152" height="81" alt=""></td>
+		<td>
+			<img name="home14" src="images/main/home/home_graphics_14.gif" width="150" height="81" alt=""></td>
+		<td>
+			<img name="home15" src="images/main/home/home_graphics_15.gif" width="157" height="81" alt=""></td>
+	</tr>
+	</table>
 
-          <ol>
-            <li>
-              <h2>Use <code>rails generate</code> to create your models and controllers</h2>
-              <p>To see all available options, run it without parameters.</p>
-            </li>
+	</td>
+	</tr>
+	</table>
+	
+	
+</td>
+</tr>
+</table>
 
-            <li>
-              <h2>Set up a default route and remove <span class="filename">public/index.html</span></h2>
-              <p>Routes are set up in <span class="filename">config/routes.rb</span>.</p>
-            </li>
+<table id="bottombar" width="800" height="83" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="5">
+        <div style="background:url(images/footers/footer.jpg); width:100%; height:65px;">
 
-            <li>
-              <h2>Create your database</h2>
-              <p>Run <code>rake db:create</code> to create your database. If you're not using SQLite (the default), edit <span class="filename">config/database.yml</span> with your username and password.</p>
-            </li>
-          </ol>
-        </div>
-      </div>
-
-      <div id="footer">&nbsp;</div>
-    </div>
-  </body>
+            </td>
+	</tr>
+</table>
+</center>
+</body>
 </html>
+			
+	
+	
+	

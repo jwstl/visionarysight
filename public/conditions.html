@@ -1,0 +1,942 @@
+<html>
+<head>
+<title>Visionary Eyecare and Surgery: Eye Conditions</title>
+<script type="text/javascript">
+
+function newImage(arg) {
+        if (document.images) {
+                rslt = new Image();
+                rslt.src = arg;
+                return rslt;
+        }
+}
+
+function changeImages() {
+        if (document.images && (preloadFlag == true)) {
+                for (var i=0; i<changeImages.arguments.length; i+=2) {
+                        document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+                }
+        }
+}
+
+var preloadFlag = false;
+function preloadImages() {
+        if (document.images) {
+                home_over = newImage("images/buttons/home_over.gif");
+                surgeon_over = newImage("images/buttons/surgeon_over.gif");
+                testimony_over = newImage("images/buttons/testimony_over.gif");
+                conditions_over = newImage("images/buttons/conditions_over.gif");
+                services_over = newImage("images/buttons/services_over.gif");
+                contact_over  = newImage("images/buttons/contact_over.gif");       
+                
+                home_conditions8 = newImage("images/main/conditions/home_graphics_08.gif");       
+                home_conditions9 = newImage("images/main/conditions/home_graphics_09.gif");  
+                home_conditions11 = newImage("images/main/conditions/home_graphics_11.gif");  
+                home_conditions12 = newImage("images/main/conditions/home_graphics_12.gif");  
+                
+                home_contact4 = newImage("images/main/contact/home_graphics_04.gif");       
+                home_contact5 = newImage("images/main/contact/home_graphics_05.gif");
+                home_contact6 = newImage("images/main/contact/home_graphics_06.gif");
+                home_contact7 = newImage("images/main/contact/home_graphics_07.gif");
+                home_contact8 = newImage("images/main/contact/home_graphics_08.gif");
+                home_contact9 = newImage("images/main/contact/home_graphics_09.gif");
+                home_contact11 = newImage("images/main/contact/home_graphics_11.gif");
+                home_contact12 = newImage("images/main/contact/home_graphics_12.gif");
+                
+                
+                home_physician6 = newImage("images/main/physician/home_graphics_06.gif");
+                home_physician8 = newImage("images/main/physician/home_graphics_08.gif");
+                home_physician9 = newImage("images/main/physician/home_graphics_09.gif");
+                home_physician11 = newImage("images/main/physician/home_graphics_11.gif");
+                home_physician12 = newImage("images/main/physician/home_graphics_12.gif");
+                
+                home_services1 = newImage("images/main/services/home_graphics_01.gif");
+                home_services2 = newImage("images/main/services/home_graphics_02.gif");
+                home_services4 = newImage("images/main/services/home_graphics_04.gif");
+                home_services5 = newImage("images/main/services/home_graphics_05.gif");
+                home_services7 = newImage("images/main/services/home_graphics_07.gif");
+                home_services8 = newImage("images/main/services/home_graphics_08.gif");
+                home_services11 = newImage("images/main/services/home_graphics_11.gif");
+                                
+                home_testimony1 = newImage("images/main/testimony/home_graphics_01.gif");
+                home_testimony4 = newImage("images/main/testimony/home_graphics_04.gif");
+                home_testimony5 = newImage("images/main/testimony/home_graphics_05.gif");
+                home_testimony7 = newImage("images/main/testimony/home_graphics_07.gif");
+                home_testimony8 = newImage("images/main/testimony/home_graphics_08.gif");
+                
+                preloadFlag = true;
+        }
+}
+
+</script>
+
+
+<style>
+
+	#fronttext {
+		width: 270px;
+		margin-left: 30px;
+		margin-top: 70px;
+	}
+	
+	#fronttext p {
+		font-family: arial,helvetica,sans-serif;
+		font-size: 12px;
+		color: #ffffff;
+		padding-top: 5px;
+		margin-top: 5px;
+		text-align: justify;
+	}
+	
+	#ourmission {
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+	}
+	
+	#frontnav {
+		margin-left: 5px;
+		margin-top: 35px;
+	}
+	
+	#near {
+		overflow: auto;
+		width: 332px;
+		height: 365px;
+		color: #fff;
+		position: absolute;
+		float: over;
+		right: 23px;
+		top: 16px;
+		z-index: 2;
+		border-left: 1px #999 solid;
+		border-right: 2px #ccc solid;
+		border-top: 1px #999 solid;
+		border-bottom: 2px #ccc solid;
+		font-family: arial,helvetica,sans-serif;
+		font-size: 12px;
+		line-spacing: 18px;		
+		scrollbar-face-color:#3E647E;
+		scrollbar-arrow-color:#999999;
+	}
+	
+	#near p {
+		margin: 10px;
+	}
+	
+	#near h2 {
+		margin: 12px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	
+	#near a {
+		color:fff;
+	}
+	
+	#far {
+		overflow: auto;
+		width: 332px;
+		height: 365px;
+		color: #fff;
+		position: absolute;
+		float: over;
+		right: 23px;
+		top: 16px;
+		z-index: 2;
+		border-left: 1px #999 solid;
+		border-right: 2px #ccc solid;
+		border-top: 1px #999 solid;
+		border-bottom: 2px #ccc solid;
+		font-family: arial,helvetica,sans-serif;
+		font-size: 12px;
+		line-spacing: 18px;		
+		scrollbar-face-color:#3E647E;
+		scrollbar-arrow-color:#999999;
+	}
+	
+	#far p {
+		margin: 10px;
+	}
+	
+	#far h2 {
+		margin: 12px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	
+	#far a {
+		color:fff;
+	}
+	
+	#astig {
+		overflow: auto;
+		width: 332px;
+		height: 365px;
+		color: #fff;
+		position: absolute;
+		float: over;
+		right: 23px;
+		top: 16px;
+		z-index: 2;
+		border-left: 1px #999 solid;
+		border-right: 2px #ccc solid;
+		border-top: 1px #999 solid;
+		border-bottom: 2px #ccc solid;
+		font-family: arial,helvetica,sans-serif;
+		font-size: 12px;
+		line-spacing: 18px;		
+		scrollbar-face-color:#3E647E;
+		scrollbar-arrow-color:#999999;
+	}
+	
+	#astig p {
+		margin: 10px;
+	}
+	
+	#astig h2 {
+		margin: 12px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	
+	#astig a {
+		color:fff;
+	}
+	
+	#astig2 {
+		overflow: auto;
+		width: 332px;
+		height: 365px;
+		color: #fff;
+		position: absolute;
+		float: over;
+		right: 23px;
+		top: 16px;
+		z-index: 2;
+		border-left: 1px #999 solid;
+		border-right: 2px #ccc solid;
+		border-top: 1px #999 solid;
+		border-bottom: 2px #ccc solid;
+		font-family: arial,helvetica,sans-serif;
+		font-size: 12px;
+		line-spacing: 18px;		
+		scrollbar-face-color:#3E647E;
+		scrollbar-arrow-color:#999999;
+	}
+	
+	#astig2 p {
+		margin: 10px;
+	}
+	
+	#astig2 h2 {
+		margin: 12px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	
+	#astig2 a {
+		color:fff;
+	}
+	
+	#ck {
+		overflow: auto;
+		width: 332px;
+		height: 365px;
+		color: #fff;
+		position: absolute;
+		float: over;
+		right: 23px;
+		top: 16px;
+		z-index: 2;
+		border-left: 1px #999 solid;
+		border-right: 2px #ccc solid;
+		border-top: 1px #999 solid;
+		border-bottom: 2px #ccc solid;
+		font-family: arial,helvetica,sans-serif;
+		font-size: 12px;
+		line-spacing: 18px;		
+		scrollbar-face-color:#3E647E;
+		scrollbar-arrow-color:#999999;
+	}
+	
+	#ck p {
+		margin: 10px;
+	}
+	
+	#ck h2 {
+		margin: 12px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	
+	#ck a {
+		color:fff;
+	}
+	
+	#lvc {
+		overflow: auto;
+		width: 332px;
+		height: 365px;
+		color: #fff;
+		position: absolute;
+		float: over;
+		right: 23px;
+		top: 16px;
+		z-index: 2;
+		border-left: 1px #999 solid;
+		border-right: 2px #ccc solid;
+		border-top: 1px #999 solid;
+		border-bottom: 2px #ccc solid;
+		font-family: arial,helvetica,sans-serif;
+		font-size: 12px;
+		line-spacing: 18px;		
+		scrollbar-face-color:#3E647E;
+		scrollbar-arrow-color:#999999;
+	}
+	
+	#lvc p {
+		margin: 10px;
+	}
+	
+	#lvc h2 {
+		margin: 12px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	
+	#lvc a {
+		color:fff;
+	}
+	
+	#presby {
+		overflow: auto;
+		width: 332px;
+		height: 365px;
+		color: #fff;
+		position: absolute;
+		float: over;
+		right: 23px;
+		top: 16px;
+		z-index: 2;
+		border-left: 1px #999 solid;
+		border-right: 2px #ccc solid;
+		border-top: 1px #999 solid;
+		border-bottom: 2px #ccc solid;
+		font-family: arial,helvetica,sans-serif;
+		font-size: 12px;
+		line-spacing: 18px;		
+		scrollbar-face-color:#3E647E;
+		scrollbar-arrow-color:#999999;
+	}
+	
+	#presby p {
+		margin: 10px;
+	}
+	
+	#presby h2 {
+		margin: 12px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	
+	#presby a {
+		color:fff;
+	}
+	
+	#glau {
+		overflow: auto;
+		width: 332px;
+		height: 365px;
+		color: #fff;
+		position: absolute;
+		float: over;
+		right: 23px;
+		top: 16px;
+		z-index: 2;
+		border-left: 1px #999 solid;
+		border-right: 2px #ccc solid;
+		border-top: 1px #999 solid;
+		border-bottom: 2px #ccc solid;
+		font-family: arial,helvetica,sans-serif;
+		font-size: 12px;
+		line-spacing: 18px;		
+		scrollbar-face-color:#3E647E;
+		scrollbar-arrow-color:#999999;
+	}
+	
+	#glau p {
+		margin: 10px;
+	}
+	
+	#glau h2 {
+		margin: 12px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	
+	#glau a {
+		color:fff;
+	}
+	
+	#cat {
+		overflow: auto;
+		width: 332px;
+		height: 365px;
+		color: #fff;
+		position: absolute;
+		float: over;
+		right: 23px;
+		top: 16px;
+		z-index: 2;
+		border-left: 1px #999 solid;
+		border-right: 2px #ccc solid;
+		border-top: 1px #999 solid;
+		border-bottom: 2px #ccc solid;
+		font-family: arial,helvetica,sans-serif;
+		font-size: 12px;
+		line-spacing: 18px;	
+		scrollbar-face-color:#3E647E;
+		scrollbar-arrow-color:#999999;
+	}
+	
+	#cat p {
+		margin: 10px;
+	}
+	
+	#cat h2 {
+		margin: 12px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	
+	#cat a {
+		color:fff;
+	}
+	
+	#mac {
+		overflow: auto;
+		width: 332px;
+		height: 365px;
+		color: #fff;
+		position: absolute;
+		float: over;
+		right: 23px;
+		top: 16px;
+		z-index: 2;
+		border-left: 1px #999 solid;
+		border-right: 2px #ccc solid;
+		border-top: 1px #999 solid;
+		border-bottom: 2px #ccc solid;
+		font-family: arial,helvetica,sans-serif;
+		font-size: 12px;
+		line-spacing: 18px;		
+		scrollbar-face-color:#3E647E;
+		scrollbar-arrow-color:#999999;
+	}
+	
+	#mac p {
+		margin: 10px;
+	}
+	
+	#mac h2 {
+		margin: 12px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	
+	#mac a {
+		color:fff;
+	}
+	
+	#dr {
+		overflow: auto;
+		width: 332px;
+		height: 365px;
+		color: #fff;
+		position: absolute;
+		float: over;
+		right: 23px;
+		top: 16px;
+		z-index: 2;
+		border-left: 1px #999 solid;
+		border-right: 2px #ccc solid;
+		border-top: 1px #999 solid;
+		border-bottom: 2px #ccc solid;
+		font-family: arial,helvetica,sans-serif;
+		font-size: 12px;
+		line-spacing: 18px;		
+		scrollbar-face-color:#3E647E;
+		scrollbar-arrow-color:#999999;
+	}	
+	
+	#dr p {
+		margin: 10px;
+	}
+	
+	#dr h2 {
+		margin: 12px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	
+	#dr a {
+		color:fff;
+	}
+	
+</style>
+
+</head>
+<body bgcolor="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"  onload="preloadImages();"><center>
+<table id="topbar" width="800" height="91" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<img src="images/headers/top_left.jpg" width="259" height="91" alt="" border="0"></td>
+<td>
+<a href="index.html"><img src="images/headers/top_middle.gif" width="299" height="91" alt="" border="0"></a></td>
+<td>
+<img src="images/headers/top_right.jpg" width="242" height="91" alt="" border="0"></td>
+</tr>
+</table>
+<table id="menubar" width="800" height="33" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<a href="index.html" onmouseover="changeImages('home', 'images/buttons/home_over.gif'); return true;" onmouseout="changeImages('home', 'images/buttons/home_off.gif'); return true;"><img name="home" src="images/buttons/home_off.gif" width="85" height="33" alt="Home" border="0"></a></td>
+		<td>
+			<a href="surgeon.html" onmouseover="changeImages('surgeon', 'images/buttons/surgeon_over.gif'); return true;"  onmouseout="changeImages('surgeon', 'images/buttons/surgeon_off.gif'); return true;"><img name="surgeon"  src="images/buttons/surgeon_off.gif" width="160" height="33" alt="Surgeon" border="0"></a></td>
+		<td>
+			<a href="testimony.html" onmouseover="changeImages('testimony', 'images/buttons/testimony_over.gif'); return true;"  onmouseout="changeImages('testimony', 'images/buttons/testimony_off.gif'); return true;"><img name="testimony"  src="images/buttons/testimony_off.gif" width="142" height="33" alt="Testimony" border="0"></a></td>
+		<td>
+			<img name="conditions"  src="images/buttons/conditions_on.gif" width="169" height="33" alt="Conditions" border="0"></td>
+		<td>
+			<a href="services.html" onmouseover="changeImages('services', 'images/buttons/services_over.gif'); return true;" onmouseout="changeImages('services', 'images/buttons/services_off.gif'); return true;"><img name="services"  src="images/buttons/services_off.gif" width="108" height="33" alt="Services" border="0"></a></td>
+		<td>
+			<a href="contact.html" onmouseover="changeImages('contact', 'images/buttons/contact_over.gif'); return true;" onmouseout="changeImages('contact', 'images/buttons/contact_off.gif'); return true;"><img name="contact"  src="images/buttons/contact_off.gif" width="136" height="33" alt="Contact" border="0"></a></td>
+	</tr>
+</table>
+
+<table id="Table_01" width="800" height="476" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<img src="images/conditions/conditions_01.jpg" width="169" height="174" alt=""></td>
+		<td>
+			<img src="images/conditions/conditions_02.jpg" width="304" height="174" alt=""></td>
+		<td rowspan="10"><div style="position:relative; height:410px; border:0px; margin:0px; padding:0px;"><img src="images/conditions/conditions_03.jpg" width="327" height="410" alt=""><div id="near">
+	 
+				 <h2>Nearsightedness</h2>
+				 
+				 
+				 <!-- eye image -->
+				 
+				 <p>Nearsightedness (myopia) . . . is caused when the light rays focused by the cornea fall in front of the retina.  This can be caused by the eye being too long or the cornea being too steep. This results in distant objects being blurry.</p>
+				 
+				 <!-- 4neareyeb -->
+				 
+				 <p>Myopia can be corrected in one of three ways: 1) glasses or contact lenses which bend the light rays to focus on the retina; 2) Custom Laser Vision Correction which flattens the surface of the cornea and allows the light rays to focus on the retina; or 3) Cataract removal with lens implantation, which refocuses the light onto the retina.</p>
+				 
+				 </div>
+				 
+				 <div id="far" style="display:none">
+				 
+				 <h2>Farsightedness</h2>
+				 
+				 <p>Farsightedness (hyperopia) . . . is caused when the light rays focused by the cornea fall behind the retina.  This can be caused by the eye being too short or the cornea being too flat. In younger individuals, low levels of hyperopia often go unnoticed. However, as we age, hyperopia affects close-up vision first, followed by a loss of distance vision.</p>
+				 
+				 <!-- 9 far eyeb -->
+				 
+				 <p>Hyperopia can also be corrected in one of three ways: 1) glasses or contact lenses which bend the light rays to focus on the retina; 2) Custom Laser Vision Correction which steepens the surface of the cornea and allows the light rays to focus on the retina; or 3) Cataract removal with lens implantation, which refocuses the light onto the retina.</p>
+				 
+				 <p><a href="#" onmousedown="javascript: document.getElementById('near').style.display='none'; document.getElementById('far').style.display='none'; document.getElementById('astig').style.display='none'; document.getElementById('astig2').style.display='none'; document.getElementById('ck').style.display='none'; document.getElementById('lvc').style.display=''; document.getElementById('presby').style.display='none'; document.getElementById('glau').style.display='none'; document.getElementById('cat').style.display='none'; document.getElementById('mac').style.display='none'; document.getElementById('dr').style.display='none';">Click here</a> to learn more about how Custom Laser Vision Correction can eliminate your Nearsightedness or Farsightedness and bring your world into focus without glasses or contacts.</p>
+				 
+				 </div>
+				 
+				 <div id="astig" style="display:none">
+				 
+				 <h2>Astigmatism</h2>
+				 
+				 <p>Astigmatism is caused when the light rays focused by two different areas of the cornea do not focus at the same spot.  The astigmatic eye has a cornea which is shaped more like a football than a basketball. This causes blurring of images at all distances.</p>
+				 
+				 <!-- 7 astg eyeb -->
+				 
+				 <p><a href="#" onmousedown="javascript: document.getElementById('near').style.display='none'; document.getElementById('far').style.display='none'; document.getElementById('astig').style.display='none'; document.getElementById('astig2').style.display=''; document.getElementById('ck').style.display='none'; document.getElementById('lvc').style.display='none'; document.getElementById('presby').style.display='none'; document.getElementById('glau').style.display='none'; document.getElementById('cat').style.display='none'; document.getElementById('mac').style.display='none'; document.getElementById('dr').style.display='none';">Click here</a> to learn how your astigmatism can be corrected in conjunction with your cataract surgery.</p>
+				 
+				 
+				 </div>
+				 
+				 <div id="presby" style="display:none">
+				 
+				 <h2>Presbyopia</h2>
+				 
+				 <p>Presbyopia is an age-related condition.  In this condition, the internal natural lens of the eye, which allows us to focus both up-close and at a distance, becomes less flexible and causes problems with near vision.  This condition manifests itself in most adults between the ages of 40 to 50 years old, and is exacerbated by underlying farsightedness.</p>
+				 
+				 <!-- picture or animation -->
+				 
+				 <p><a href="#" onmousedown="javascript: document.getElementById('near').style.display='none'; document.getElementById('far').style.display='none'; document.getElementById('astig').style.display='none'; document.getElementById('astig2').style.display='none'; document.getElementById('ck').style.display=''; document.getElementById('lvc').style.display='none'; document.getElementById('presby').style.display='none'; document.getElementById('glau').style.display='none'; document.getElementById('cat').style.display='none'; document.getElementById('mac').style.display='none'; document.getElementById('dr').style.display='none';">Click here</a> to learn more about how NearVision CK can "turn back the hands of time" on your Presbyopia and free you from the burden of reading glasses.</p>
+				 
+				 
+				 </div>
+				 
+				 <div id="glau" style="display:none">
+				 
+				 <h2>Glaucoma</h2>
+				 
+				 <p>Glaucoma, one of the leading causes of blindness, is estimated to affect 1 of every 50 adults. Although glaucoma can occur at any age, the risk of developing the disease increases dramatically after the age of 35. Glaucoma is also more likely to develop in persons who are severely nearsighted, persons with a family history of the condition, diabetics and blacks. Because the symptoms of early glaucoma are so slight, the disease often goes unnoticed until permanent vision loss has occurred. However, with early diagnosis and careful treatment, visual damage from glaucoma can be prevented. </p>
+				 
+				 </div>
+				 
+				 <div id="cat" style="display:none">
+				 
+				 <h2>Cataract</h2>
+				 
+				 <p>A cataract is a clouding of the lens of the eye, which is normally clear and transparent. When a cataract develops, the lens becomes foggy like a frosted window. There are many misconceptions about cataracts. They are not tumors, or a new growth of skin or tissue over the eye. They don't spread from eye to eye, and they're not caused by using your eyes too much. In fact, no one knows what causes cataracts, or how to prevent them. They usually develop gradually over a period of years, and are considered a normal part of the aging process. Most of us, if we live long enough, will develop cataracts. </p>
+				 
+				 </div>
+				 
+				 <div id="mac" style="display:none">
+				 
+				 <h2>Macular Degeneration</h2>
+				 
+				 <p>Macular Degeneration is the leading cause of impaired reading or detailed vision. It is caused by the breakdown of the macula, the central portion of the retina. Although macular degeneration causes distortion of central and color vision, side vision is not affected. There are two forms of Macular Degeneration, "dry" and "wet".</p>
+				 
+				 </div>
+				 
+				 <div id="dr" style="display:none">
+				 
+				 <h2>Diabetic Retinopathy</h2>
+				 
+				 <p>Diabetic retinopathy is a complication of diabetes mellitus which causes abnormalities in the tiny blood vessels nourishing the retina.  Damage to these vessels causes them to leak fluid and blood, which ultimately damages the retina.  Left untreated, diabetic retinopathy can result in severe visual loss, including blindness.</p>
+				 
+				 </div>
+				 
+				 <div id="astig2" style="display:none">
+				 
+				 <h2>Advanced Cataract Care-Astigmatism Service</h2>
+				 
+					  <p><b>About Astigmatism</b></p>
+	 
+					  <p>The human eye is best able to focus if the cornea (the front clear window of the eye) is round like a basketball. Astigmatism occurs when the cornea has an oval shape like a football. This causes light rays entering the eye to be focused at more than one point on the retina, causing a reduction in vision. Many patients suffer some degree of astigmatism and never experience truly clear vision, not knowing what they are missing. Symptoms of astigmatism include: image distortion and shadows, double vision, tilted images, light sensitivity, glare, and tired eyes.</p>
+					  
+					  <p><b>What can be done?</b></p>
+					  
+					  <p>Fortunately, advances in eye surgery have led to techniques that can reduce or eliminate your astigmatism. After careful, detailed measurements of your cornea, micro incisions can be made along the more highly curved, or "steep" portions of the cornea. This allows those areas to flatten out, giving the cornea a more desirable round shape and better vision.</p>
+					  
+					  <p><b>But my doctor recommends I undergo cataract surgery...</b></p>
+					  
+					  <p>Cataract surgery is the ideal time to correct any astigmatism. The painless micro incisions to treat the astigmatism can be performed at the completion of your cataract procedure.  Patients enjoy the convenience of having both procedures simultaneously, and give themselves the best chance of clear vision after surgery.</p>
+					  
+					  <p>Cataract surgery alone can correct only nearsightedness or farsightedness, but not astigmatism. Thus patients may not truly experience their full visual potential if the astigmatism is not also corrected.</p>
+					  
+					  <p><b>What benefits could I experience?</b></p>
+					  
+					  <p>First and foremost, by reducing or eliminating your astigmatism at the time of cataract surgery, you improve your chances of not needing any glasses for distance vision after surgery. If you do need glasses, they will be lighter and thinner than before surgery, and often less expensive. You also may experience greater visual comfort, as glare, image distortion, and eye strain are reduced. While no procedure is perfect, Dr. Bias has years of experience in successfully treating astigmatism at the time of cataract removal. Patients should remember they will typically still need reading glasses after their cataract removal, whether or not the astigmatism was treated.</p>
+					  
+					  <p><b>Is this service covered by my insurance?</b></p>
+					  
+					  <p>Unfortunately, Medicare and most other major insurance carriers do not cover "refractive" services. This is why you must make a separate payment for your glasses check at the time of your examination. Keeping with this policy, astigmatism treatment at the time of cataract surgery is also typically not covered. </p>
+					  
+					  <p>However, as the leader in cataract care in the St. Louis area, Visionary Eyecare & Surgery is pleased to offer this valuable service for a small additional fee. Because the measurements can be obtained during your pre-operative evaluation, and the procedure is carried out in conjunction with your cataract surgery, we are able to pass these savings on to you. And all for a fraction of the cost of traditional laser vision correction procedures.</p>
+					  
+					  <p><b>The Value of Better Vision</b></p>
+					  
+					  <p>Better vision at distance without glasses, save money on glasses after surgery, and an improved quality of life - all with a painless, low risk, economical procedure - but only at the time of your cataract surgery!</p>
+					  
+					  <p>Ask Dr. Bias if this treatment can help you see better, today!</p>
+				 </div>				 
+				 <div id="ck" style="display:none">
+
+					<h2>NearVision CK</h2>
+
+<p>It seems to happen overnight.  Suddenly, you can no longer read a menu, check your watch, or review the scores on your golf card.  Rest assured, you are not alone.  Millions of baby boomers like you are losing their near vision as part of the natural aging process, a condition known as Presbyopia.</p>
+
+<p>Now imagine turning back the clock on your vision to a time when you could see clearly without the hassle of reading glasses.  Today you can with the only technology that is FDA approved for the treatment of presbyopia, NearVision CK.</p>
+
+<br />
+<center><img src="images/services/nvcklogo.gif" width="298" height="47"></center> 
+<br />
+
+<p>Visionary Eyecare & Surgery is pleased to offer NearVision CK (Conductive Keratoplasty), an exciting advancement in vision correction that uses radio frequency (RF) energy instead of a laser to reshape your cornea, allowing your near vision to come back into focus.  Because there is no cutting, or removal of tissue with the laser, and typically only one eye is treated, NearVision CK is extremely safe and painless, and can be performed in our office in a matter of minutes. And Dr. Bias is one of the first and only eye surgeons in the state of Missouri certified to perform NearVision CK.</p>
+
+<p><b>If you are</b>:</p>
+
+<ul>
+<li>Age 45 or older</li>
+<li>Have good distance vision without glasses</li>
+<li>And, struggle with reading glasses when checking a price tag or dialing a cell phone</li>
+</ul>
+
+<p><b>You may be a candidate for NearVision CK</b>.</p>
+
+<!-- Insert photo next to above -->
+
+<p>To take the first step toward better near vision without the hassle of reading glasses, it's time to schedule a full eye examination. Dr. Bias can diagnose your specific vision problem and determine whether NearVision CK is right for you.  Make today the day you decide to safely see young again.</p>
+
+<p><a target="_blank" href="http://www.myclearvision.com">Click here</a> to learn more about NearVision CK.</p>
+
+
+				</div>
+				<div id="lvc" name="lvc" style="display:none">
+					   <h2>CustomVue <small>(TM)</small> Laser Vision Correction (LASIK) by VISX</h2>
+					   <!-- Visxlogo -->
+					   
+					   <p>By now, almost everyone is aware that treatments exist to correct your nearsightedness or farsightedness, and reduce or eliminate your need for glasses to see in the distance. Chances are, several of your friends or family members are experiencing the joys of living without glasses or contact lenses as a result of laser vision correction.  You've heard the excitement in their voices, noticed the boost in their confidence levels, and watched the quality of their lives improved with newfound freedoms. </p>
+					   
+					   <p>Millions of Americans are enjoying these life-enhancing benefits, and millions more, just like you, are exploring the procedure that could free them from the worries of glasses and contact lenses. Thanks to a revolutionary breakthrough in technology, now is the time for you to join millions of other happy patients making the dream of clear vision become a reality.  </p>
+					   
+					   <p align="center"><img src="images/services/eyechart.gif" width="203" height="138"></p>
+					   
+					   <p>Until now, your treatment was based on diagnostic technology similar to that used for the prescription of eye glasses or contact lenses. However, with Visionary Eyecare & Surgery's addition of the CustomVue WaveScan <small>(TM)</small> System by VISX, we can produce a precise and more detailed analysis of your vision, and provide you with a more personalized approach to laser vision correction.</p>
+					   
+					   <!-- customvue 2c image -->
+					   
+					   <p>With the diagnostic and treatment technologies of the WaveScan System, Dr. Bias can develop a personalized laser vision correction plan that addresses your individual needs. </p>
+					   
+					   <!-- correctivelens image -->
+					   
+					   <p>There are two parts to the VISX WaveScan System. First, it includes a diagnostic device that maps the entire optical path of your eye. This WavePrint <small>(TM)</small> Map, called the "fingerprint of your vision," provides the surgeon with precise and detailed information about your vision. </p>
+					   
+					   <p align="center"><img src="images/services/biaswavescan.jpg" width="275" height="220"></p>
+					   
+					   <p>Secondly, the WaveScan System incorporates the STAR S4 <small>(TM)</small> laser from VISX with two exclusive features: Variable Spot Scanning <small>(TM)</small> and 3D ActiveTrak<small>(TM)</small> technology. Variable Spot Scanning (VSS <small>(TM)</small>) allows for a larger treatment area and offers the physician greater flexibility in developing a more personalized laser vision procedure, when pupil size may be a consideration. </p>
+					   
+					   <p>3D ActiveTrak automatically and instantaneously tracks the minute movements of your eye in all three dimensions during the laser treatment. This unique feature means you no longer have to hold your eye perfectly still, but can relax, knowing your treatment is precisely centered on your eye. The doctor uses these exclusive technologies along with the WavePrint Map to provide laser vision correction care based on your personal vision needs. </p>
+					   
+					   <!-- Photo of Star S4 -->
+					   
+					   <p>We'd love to discuss these new advances in customized laser vision correction with you at your convenience. Call Visionary Eyecare & Surgery today for your personal consultation, the first step to a clearer tomorrow!</p>
+					   
+					   <p>To learn more about the VISX WaveScan CustomVue system, visit <a target="_blank" href="http://www.visx.com">visx.com</a> or <a target="_blank" href="http://www.personalbestvision.com">personalbestvision.com</a></p>
+					   
+					   <p align="center"><img src="images/services/customvue.gif" width="233" height="82"></p>
+					   
+					   
+					   <p>To learn more about the VISX CustomVue Laser Center that Dr. Bias utilizes, <a target="_blank" href="http://www.stlouisrefractive.com">click here</a>.</p>
+					   
+					   <a name="lvcfaq"></a><h2>Frequently Asked Questions:</h2>
+					   
+					   <ul>
+					   <li><a href="#confused">I'm confused by all the terminology. What do the different names mean?</a></li>
+					   <li><a href="#prk">What is PRK?</a></li>
+					   <li><a href="#lasik">What is LASIK?</a></li>
+					   <li><a href="#lasek">What is LASEK?</a></li>
+					   <li><a href="#candidate">Who is a candidate for LASIK?</a></li>
+					   <li><a href="#lenses">What about my contact lenses?</a></li>
+					   <li><a href="#pain">Is LASIK painful?</a></li>
+					   <li><a href="#both">Can I have laser vision correction on both eyes at the same time?</a></li> 
+					   <li><a href="#long">How long does the procedure take?</a></li> 
+					   <li><a href="#glasses">Will I need glasses after I have this procedure performed?</a></li> 
+					   <li><a href="#payment">What LASIK payment options are available?</a></li> 
+					   <li><a href="#laser">How does a laser know what to correct in my eyes?</a></li> 
+					   <li><a href="#map">What is the WavePrint Map I've heard about and how is it made?</a></li> 
+					   <li><a href="#wavescan">How accurate is WaveScan technology?</a></li> 
+					   <li><a href="#painwave">Does the WaveScan scanning process hurt?</a></li>
+					   <li><a href="#workwave">How does the WaveScan work?</a></li> 
+					   <li><a href="#personal">What do you mean by 'Personal Best' vision?</a></li> 
+					   <li><a href="#wavescanme">What can WaveScan technology do for me?</a></li> 
+					   <li><a href="#fda">Is the WaveScan procedure FDA approved?</a></li> 
+					   <li><a href="#results">What are some of the results of WaveScan procedure to date? </a></li>
+					   </ul>
+					   
+					   <p><a name="confused"></a><b>I'm confused by all the terminology. What do the different names mean?</b></p>
+					   
+					   <p>Laser Vision Correction (LVC) is the "generic" term used to describe any procedure using the excimer laser to correct distance vision. The excimer laser uses a cool beam of light to precisely reshape the cornea (the front clear surface of the eye), allowing distant objects to come into focus more clearly without glasses. There are numerous different companies that produce excimer lasers for this procedure, however VISX is the dominant market leader, accounting for approximately 75% of all LVC procedures performed in this country each year.</p>
+					   
+					   <p align="center"><img src="images/services/excimerhair.jpg"><br /><i>Electron micrograph of a human hair<br />sculpted by the excimer laser,<br />showing the extreme precision<br />of this technology</i></p>
+					   
+					   <p>In addition to different laser manufacturers, there are also several different ways to perform the LVC procedure itself. The three most popular surgical techniques are called LASIK, PRK (surface ablation), and LASEK (see detailed explanations below). The differences have to do with how the cornea is prepared prior to laser delivery. All three options have their benefits, and in certain situations one treatment may be preferred over the others. That is why it's important that your LVC surgeon is skilled and experienced in all three treatment techniques. At Visionary Eyecare & Surgery, Dr. Bias has been performing LVC since 1998, and can discuss with you which treatment mode is best for your situation.</p>
+					   
+					   <p>It is important to realize that once the cornea is prepared for laser delivery by one of these methods, the laser treatment itself is exactly the same regardless of which procedure you choose. That is why numerous scientific studies have shown that there is no difference in visual outcomes between LASIK, PRK, and LASEK.</p>
+					   
+					   <p><a href="#lvcfaq">BACK</a></p>
+					   
+					   <p><a name="prk"></a><b>Photorefractive Keratectomy (PRK) or "Surface Ablation"</b></p>
+					   
+					   <p>PRK was the first surgical procedure developed to reshape the cornea using the excimer laser. Granted FDA approval in 1995 after years of research and clinical trials, the excimer laser uses a cool beam of light to sculpt the cornea to enhance uncorrected vision. In PRK, the front surface of the cornea, the epithelium, is gently removed with a smooth brush prior to laser delivery. PRK works best for patients with low to moderate nearsightedness and farsightedness, with or without astigmatism. Having been largely supplanted by LASIK over the past several years, PRK is making a resurgence, owing to its excellent safety profile and compatibility with new wavefront laser technology.</p>
+					   
+					   <p align="center"><img src="images/services/prk.jpg" width="240" height="190"></p>
+					   
+					   <p>It is important not to confuse PRK with RK, which stands for radial keratotomy. RK was the precursor to excimer laser vision correction, where small incisions were made into the cornea with a blade to change its shape and thus alter your vision. RK is no longer performed in this country, having been supplanted years ago by the precise accuracy of the excimer laser and the PRK technique.</p>
+					   
+					   <!-- PLAY PRK CLIP -->
+					   
+					   <p><a href="#lvcfaq">BACK</a></p>
+					   
+					   <p><b><a name="lasik"></a>Laser Assisted In-situ Keratomileusis (LASIK)</b></p>
+					   
+					   <p>After years of off label use, LASIK was FDA approved in 1999. In LASIK, a thin wafer of corneal tissue is sculpted with a microkeratome. This flap is lifted back, and the excimer laser reshapes the underlying corneal tissue. The flap is then replaced, allowing for a remarkably rapid improvement in vision with little or no discomfort. Patients often achieve 20/20 vision the very next day, and these dramatic results have led LASIK to become the refractive procedure of choice worldwide. LASIK is indicated for almost all levels of nearsightedness, as well as for farsightedness and astigmatism.</p>
+					   
+					  <p align="center"><img src="images/services/lasik.jpg" width="240" height="190"></p>
+					   
+					   <p><a href="#lvcfaq">BACK</a></p>
+					   
+					   <p><a name="lasek"></a><b>Laser-assisted subepithelial keratectomy (LASEK)</b></p>
+					   
+					   <p>LASEK, the newest development in laser vision correction, combines the best attributes from the LASIK and PRK procedures. Instead of using a microkeratome to create the flap, an epithelial flap is gently fashioned without a blade, and the excimer laser reshapes the cornea underneath. The epithelium is then repositioned to complete the procedure. While visual recovery is not typically as rapid as with LASIK, patients usually experience less discomfort postoperatively compared to PRK.</p>
+					   
+					   <p><a href="#lvcfaq">BACK</a></p>
+					   
+					   <p><a name="candidate"></a><b>Who is a candidate for LASIK?</b></p>
+					   
+					   <p>The patient must meet the following conditions: </p>
+					   
+					   <ul>
+					   <li>Must undergo a complete eye examination and refractive surgery workup</li>
+					   <li>Must have no active eye disease</li>
+					   <li>Must have realistic expectations concerning the procedure </li>
+					   <li>Cannot have systemic disease that could affect the wound healing process</li>
+					   <li>Must be 18 years of age or older </li>
+					   </ul>
+					   
+					   <p><a href="#lvcfaq">BACK</a></p>
+					   
+					   <p><a name="lenses"></a><b>What about my contact lenses?</b></p>
+					   
+					   <p>Patients with soft contact lenses must discontinue wear at least two weeks prior to their workup and then through the time leading up to their surgery. Patients with hard or gas-permeable lenses must discontinue wear at least three to four weeks prior to their workup and again, through the time up until to surgery.  Failure to do so may cause an inaccurate result. </p>
+					   
+					   <p><a href="#lvcfaq">BACK</a></p>
+					   
+					   <p><a name="pain"></a><b>Is LASIK painful?</b></p>
+					   
+					   <p>There is very little discomfort during the surgery.  The eye is numbed using anesthetic eye drops.  After the surgery, there can be mild discomfort, which is usually gone within 24 hours. </p>
+					   
+					   <p><a href="#lvcfaq">BACK</a></p>
+					   
+					   <p><a name="both"></a><b>Can I have laser vision correction on both eyes at the same time?</b></p>
+					   
+					   <p>Yes, most patients have both eyes done on the same day. </p>
+					   
+					   <p><a href="#lvcfaq">BACK</a></p>
+					   
+					   <p><a name="long"></a><b>How long does the procedure take?</b> </p>
+					   
+					   <p>The actual procedure itself takes about 15 minutes.  However, your total time at our facility will be approximately 1 1/2 hours due to preparation prior to the procedure and observation following it. </p>
+					   
+					   <p><a href="#lvcfaq">BACK</a></p>
+					   
+					   <p><a name="glasses"></a><b>Will I need glasses after I have this procedure performed?</b> </p>
+					   
+					   <p>While the results with this procedure are highly predictable, a few people will need glasses to get their best possible visual acuity. Generally, this is less than 10% of the patients.  If you are over 40, you'll likely need glasses for reading.</p>
+					   
+					   <p><a href="#lvcfaq">BACK</a></p>
+					   
+					   <p><a name="payment"></a><b>What LASIK payment options are available?</b> </p>
+					   
+					   <p>Payment for LASIK can be made with cash, check, Mastercard, Visa, or American Express. Additionally, Visionary Eyecare & Surgery is happy to provide affordable financing options that can allow you to enjoy your "Personal Best Vision" for as little as $44 a month, per eye. To learn more about payment and financing options click here to visit <a target="_blank" href="http://www.stlouisrefractive.com">St. Louis Refractive Surgery Center</a></p>
+					   
+					   <p><a href="#lvcfaq">BACK</a></p>
+					   
+					   <p><a name="laser"></a><b>How does a laser know what to correct in my eyes?</b></p>
+					   
+					   <p>Laser Vision Correction is based on precise measurements of the imperfections in your vision. These measurements are taken with a powerful scanning measurement tool used in the WaveScan procedure. The scan information is transferred to the laser to guide the treatment.</p>
+					   
+					   <p><a href="#lvcfaq">BACK</a></p>
+					   
+					   <p><a name="map"></a><b>What is the WavePrint Map I've heard about and how is it made?</b> </p>
+					   
+					   <p align="center"><img src="images/services/waveprintmap.gif" width="280" height="216"></p>
+					   
+					   <p>WavePrint scanning technology provides a measurement and a visual representation of your vision based on the behavior of light waves. It compares light passing through your eye to the same light pattern from an eye that needs no vision correction. The 'map' is the output of this scanning and it captures the unique imperfections of a person's visual pathway. </p>
+					   
+					   <p><a href="#lvcfaq">BACK</a></p>
+					   
+					   <p><a name="wavescan"></a><b>How accurate is WaveScan technology?</b></p>
+					   
+					   <p>WaveScan technology identifies and measures imperfections in an individual's vision 25 times more precisely than standard methods used for glasses and contact lenses. </p>
+					   
+					   <p><a href="#lvcfaq">BACK</a></p>
+					   
+					   <p><a name="painwave"></a><b>Does the WaveScan scanning process hurt?</b></p>
+					   
+					   <p>No, the WaveScan is a measurement device that you simply gaze into while it measures the vision imperfections in your eye.</p>
+					   
+					   <p><a href="#lvcfaq">BACK</a></p>
+					   
+					   <p><a name="workwave"></a><b>How does the WaveScan work?</b></p>
+					   
+					   <p>First, the WaveScan technology measures the imperfections in the eyes and produces a WavePrint map. Much like a fingerprint, no two WavePrint maps are alike. Then, the treatment information is transferred to the VISX STAR S4 <small>(TM)</small> laser. The doctor then uses that information to fine-tune the procedure thereby providing a new level of precision and accuracy. </p>
+					   
+					   <p><a href="#lvcfaq">BACK</a></p>
+					   
+					   <p><a name="personal"></a><b>What do you mean by 'Personal Best' vision?</b></p>
+					   
+					   <p>Personal Best Vision refers to the new level of laser vision correction that can be achieved with the WaveScan procedure. Since WaveScan technology can measure and correct imperfections that are unique to each person's vision with 25 times more precision than standard measurements for glasses and contact lenses, individuals can potentially achieve the best possible vision for their eyes. </p>
+					   
+					   <p><a href="#lvcfaq">BACK</a></p>
+					   
+					   <p><a name="wavescanme"></a><b>What can WaveScan technology do for me?</b></p>
+					   
+					   <p>As shown in the clinical study, WaveScan has the potential to produce better vision than is possible with glasses and contact lenses. It tailors a distinct correction for each individual; in fact each treatment is "designed" by the unique characteristics of your individual eye. </p>
+					   
+					   <p><a href="#lvcfaq">BACK</a></p>
+					   
+					   <p><a name="fda"></a><b>Is the WaveScan procedure FDA approved?</b></p>
+					   
+					   <p>Based on numerous clinical studies, the U.S. FDA has approved the VISX WaveScan CustomVue laser vision correction procedure as safe and effective for treating nearsightedness, farsightedness, and astigmatism.</p>
+					   
+					   <p><a href="#lvcfaq">BACK</a></p>
+					   
+					   <p><a name="results"></a><b>What are some of the results of WaveScan procedure to date?</b></p>
+					   
+					   <p>In the FDA study, one year after the VISX CustomVue <small>(TM)</small> procedure: </p>
+					   
+					   <ul>
+					   <li>100% of participants could pass a driving test without glasses or contact lenses</li>
+					   <li>98% of participants could see 20/20 or better without glasses or contact lenses</li>
+					   <li>70% of participants could see <b>better than 20/20</b> without glasses or contact lenses</li>
+					   </ul>
+					   
+					   <p>In addition, many participants reported that they had clearer, better vision both during the day and at night, compared to their vision with glasses or contact lenses before the procedure.</p>
+					   
+					   <p><a href="#lvcfaq">BACK</a></p>
+				</div></div></td>
+	</tr>
+	<tr>
+		<td rowspan="9">
+			<img src="images/conditions/conditions_04.jpg" width="169" height="236" alt=""></td>
+		<td>
+			<a href="#" onmousedown="javascript: document.getElementById('near').style.display=''; document.getElementById('far').style.display='none'; document.getElementById('astig').style.display='none'; document.getElementById('astig2').style.display='none'; document.getElementById('ck').style.display='none'; document.getElementById('lvc').style.display='none'; document.getElementById('presby').style.display='none'; document.getElementById('glau').style.display='none'; document.getElementById('cat').style.display='none'; document.getElementById('mac').style.display='none'; document.getElementById('dr').style.display='none';"><img src="images/conditions/conditions_05.gif" width="304" height="27" border="0" alt=""></a></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="#" onmousedown="javascript: document.getElementById('near').style.display='none'; document.getElementById('far').style.display=''; document.getElementById('astig').style.display='none'; document.getElementById('astig2').style.display='none'; document.getElementById('ck').style.display='none'; document.getElementById('lvc').style.display='none'; document.getElementById('presby').style.display='none'; document.getElementById('glau').style.display='none'; document.getElementById('cat').style.display='none'; document.getElementById('mac').style.display='none'; document.getElementById('dr').style.display='none';"><img src="images/conditions/conditions_06.gif" width="304" height="25" border="0" alt=""></a></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="#" onmousedown="javascript: document.getElementById('near').style.display='none'; document.getElementById('far').style.display='none'; document.getElementById('astig').style.display=''; document.getElementById('astig2').style.display='none'; document.getElementById('ck').style.display='none'; document.getElementById('lvc').style.display='none'; document.getElementById('presby').style.display='none'; document.getElementById('glau').style.display='none'; document.getElementById('cat').style.display='none'; document.getElementById('mac').style.display='none'; document.getElementById('dr').style.display='none';"><img src="images/conditions/conditions_07.gif" width="304" height="27"  border="0" alt=""></a></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="#" onmousedown="javascript: document.getElementById('near').style.display='none'; document.getElementById('far').style.display='none'; document.getElementById('astig').style.display='none'; document.getElementById('astig2').style.display='none'; document.getElementById('ck').style.display='none'; document.getElementById('lvc').style.display='none'; document.getElementById('presby').style.display=''; document.getElementById('glau').style.display='none'; document.getElementById('cat').style.display='none'; document.getElementById('mac').style.display='none'; document.getElementById('dr').style.display='none';"><img src="images/conditions/conditions_08.gif" width="304" height="26"  border="0" alt=""></a></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="#" onmousedown="javascript: document.getElementById('near').style.display='none'; document.getElementById('far').style.display='none'; document.getElementById('astig').style.display='none'; document.getElementById('astig2').style.display='none'; document.getElementById('ck').style.display='none'; document.getElementById('lvc').style.display='none'; document.getElementById('presby').style.display='none'; document.getElementById('glau').style.display='none'; document.getElementById('cat').style.display=''; document.getElementById('mac').style.display='none'; document.getElementById('dr').style.display='none';"><img src="images/conditions/conditions_09-1.gif" width="304" height="27" border="0" alt=""></a></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="#" onmousedown="javascript: document.getElementById('near').style.display='none'; document.getElementById('far').style.display='none'; document.getElementById('astig').style.display='none'; document.getElementById('astig2').style.display='none'; document.getElementById('ck').style.display='none'; document.getElementById('lvc').style.display='none'; document.getElementById('presby').style.display='none'; document.getElementById('glau').style.display=''; document.getElementById('cat').style.display='none'; document.getElementById('mac').style.display='none'; document.getElementById('dr').style.display='none';"><img src="images/conditions/conditions_10-1.gif" width="304" height="23"  border="0" alt=""></a></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="#" onmousedown="javascript: document.getElementById('near').style.display='none'; document.getElementById('far').style.display='none'; document.getElementById('astig').style.display='none'; document.getElementById('astig2').style.display='none'; document.getElementById('ck').style.display='none'; document.getElementById('lvc').style.display='none'; document.getElementById('presby').style.display='none'; document.getElementById('glau').style.display='none'; document.getElementById('cat').style.display='none'; document.getElementById('mac').style.display=''; document.getElementById('dr').style.display='none';"><img src="images/conditions/conditions_11.gif" width="304" height="25"  border="0" alt=""></a></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="#" onmousedown="javascript: document.getElementById('near').style.display='none'; document.getElementById('far').style.display='none'; document.getElementById('astig').style.display='none'; document.getElementById('astig2').style.display='none'; document.getElementById('ck').style.display='none'; document.getElementById('lvc').style.display='none'; document.getElementById('presby').style.display='none'; document.getElementById('glau').style.display='none'; document.getElementById('cat').style.display='none'; document.getElementById('mac').style.display='none'; document.getElementById('dr').style.display='';"><img src="images/conditions/conditions_12.gif" width="304" height="27"  border="0" alt=""></a></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/conditions/conditions_13.jpg" width="304" height="29" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="5">
+        <div style="background:url(images/footers/footer.jpg); width:100%; height:65px;">
+
+            </td>
+	</tr>
+</table>
+</center>
+
+</body>
+</html>
+			
+	
+	

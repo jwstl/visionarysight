@@ -1,0 +1,939 @@
+<html>
+<head>
+<title>Visionary Eyecare and Surgery</title>
+<script type="text/javascript">
+
+function newImage(arg) {
+        if (document.images) {
+                rslt = new Image();
+                rslt.src = arg;
+                return rslt;
+        }
+}
+
+function changeImages() {
+        if (document.images && (preloadFlag == true)) {
+                for (var i=0; i<changeImages.arguments.length; i+=2) {
+                        document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+                }
+        }
+}
+
+var preloadFlag = false;
+function preloadImages() {
+        if (document.images) {
+                home_over = newImage("images/buttons/home_over.gif");
+                surgeon_over = newImage("images/buttons/surgeon_over.gif");
+                testimony_over = newImage("images/buttons/testimony_over.gif");
+                conditions_over = newImage("images/buttons/conditions_over.gif");
+                services_over = newImage("images/buttons/services_over.gif");
+                contact_over  = newImage("images/buttons/contact_over.gif");       
+                
+                home_conditions8 = newImage("images/main/conditions/home_graphics_08.gif");       
+                home_conditions9 = newImage("images/main/conditions/home_graphics_09.gif");  
+                home_conditions11 = newImage("images/main/conditions/home_graphics_11.gif");  
+                home_conditions12 = newImage("images/main/conditions/home_graphics_12.gif");  
+                
+                home_contact4 = newImage("images/main/contact/home_graphics_04.gif");       
+                home_contact5 = newImage("images/main/contact/home_graphics_05.gif");
+                home_contact6 = newImage("images/main/contact/home_graphics_06.gif");
+                home_contact7 = newImage("images/main/contact/home_graphics_07.gif");
+                home_contact8 = newImage("images/main/contact/home_graphics_08.gif");
+                home_contact9 = newImage("images/main/contact/home_graphics_09.gif");
+                home_contact11 = newImage("images/main/contact/home_graphics_11.gif");
+                home_contact12 = newImage("images/main/contact/home_graphics_12.gif");
+                
+                
+                home_physician6 = newImage("images/main/physician/home_graphics_06.gif");
+                home_physician8 = newImage("images/main/physician/home_graphics_08.gif");
+                home_physician9 = newImage("images/main/physician/home_graphics_09.gif");
+                home_physician11 = newImage("images/main/physician/home_graphics_11.gif");
+                home_physician12 = newImage("images/main/physician/home_graphics_12.gif");
+                
+                home_services1 = newImage("images/main/services/home_graphics_01.gif");
+                home_services2 = newImage("images/main/services/home_graphics_02.gif");
+                home_services4 = newImage("images/main/services/home_graphics_04.gif");
+                home_services5 = newImage("images/main/services/home_graphics_05.gif");
+                home_services7 = newImage("images/main/services/home_graphics_07.gif");
+                home_services8 = newImage("images/main/services/home_graphics_08.gif");
+                home_services11 = newImage("images/main/services/home_graphics_11.gif");
+                                
+                home_testimony1 = newImage("images/main/testimony/home_graphics_01.gif");
+                home_testimony4 = newImage("images/main/testimony/home_graphics_04.gif");
+                home_testimony5 = newImage("images/main/testimony/home_graphics_05.gif");
+                home_testimony7 = newImage("images/main/testimony/home_graphics_07.gif");
+                home_testimony8 = newImage("images/main/testimony/home_graphics_08.gif");
+                
+                preloadFlag = true;
+        }
+}
+
+</script>
+
+
+<style type="text/css">
+
+	#astig2 {
+		overflow: auto;
+		width: 322px;
+		height: 375px;
+		color: #fff;
+		position: absolute;
+		float: over;
+		right: 127px;
+		top: 20px;
+		z-index: 2;
+		border-left: 1px #999 solid;
+		border-right: 2px #ccc solid;
+		border-top: 1px #999 solid;
+		border-bottom: 2px #ccc solid;
+		font-family: arial,helvetica,sans-serif;
+		font-size: 12px;
+		line-spacing: 18px;		
+		scrollbar-face-color:#3E647E;
+		scrollbar-arrow-color:#999999;
+	}
+	
+	#astig2 p {
+		margin: 10px;
+	}
+	
+	#astig2 h2 {
+		margin: 12px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	
+	#astig2 a {
+		color:fff;
+	}
+	
+
+	#cataract {
+		overflow: auto;
+		width: 322px;
+		height: 375px;
+		color: #fff;
+		position: absolute;
+		float: over;
+		right: 127px;
+		top: 20px;
+		z-index: 2;
+		border-left: 1px #999 solid;
+		border-right: 2px #ccc solid;
+		border-top: 1px #999 solid;
+		border-bottom: 2px #ccc solid;
+		font-family: arial,helvetica,sans-serif;
+		font-size: 12px;
+		line-spacing: 18px;		
+		scrollbar-face-color:#3E647E;
+		scrollbar-arrow-color:#999999;
+			
+	}
+	
+	#cataract p {
+		margin: 10px;
+	}
+	
+	#cataract h2 {
+		margin: 12px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	
+	#cataract a {
+		color:fff;
+	}
+	
+			
+	#lasik {
+		overflow: auto;
+		width: 322px;
+		height: 375px;
+		color: #fff;
+		position: absolute;
+		float: over;
+		right: 127px;
+		top: 20px;
+		z-index: 2;
+		border-left: 1px #999 solid;
+		border-right: 2px #ccc solid;
+		border-top: 1px #999 solid;
+		border-bottom: 2px #ccc solid;
+		font-family: arial,helvetica,sans-serif;
+		font-size: 12px;
+		line-spacing: 18px;		
+		scrollbar-face-color:#3E647E;
+		scrollbar-arrow-color:#999999;
+		
+	}
+	
+	#lasik p {
+		margin: 10px;
+	}
+	
+	#lasik h2 {
+		margin: 12px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	
+	#lasik a {
+		color:fff;
+	}
+	
+	
+	
+	#ck {
+		overflow: auto;
+		width: 322px;
+		height: 375px;
+		color: #fff;
+		position: absolute;
+		float: over;
+		right: 127px;
+		top: 20px;
+		z-index: 2;
+		border-left: 1px #999 solid;
+		border-right: 2px #ccc solid;
+		border-top: 1px #999 solid;
+		border-bottom: 2px #ccc solid;
+		font-family: arial,helvetica,sans-serif;
+		font-size: 12px;
+		line-spacing: 18px;		
+		scrollbar-face-color:#3E647E;
+		scrollbar-arrow-color:#999999;
+		
+	}
+	
+	#ck p {
+		margin: 10px;
+	}
+	
+	#ck h2 {
+		margin: 12px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	
+	#ck a {
+		color:fff;
+	}
+	
+	
+	#glaucoma {
+		overflow: auto;
+		width: 322px;
+		height: 375px;
+		color: #fff;
+		position: absolute;
+		float: over;
+		right: 127px;
+		top: 20px;
+		z-index: 2;
+		border-left: 1px #999 solid;
+		border-right: 2px #ccc solid;
+		border-top: 1px #999 solid;
+		border-bottom: 2px #ccc solid;
+		font-family: arial,helvetica,sans-serif;
+		font-size: 12px;
+		line-spacing: 18px;		
+		scrollbar-face-color:#3E647E;
+		scrollbar-arrow-color:#999999;
+	}
+	
+	#glaucoma p {
+		margin: 10px;
+	}
+	
+	#glaucoma h2 {
+		margin: 12px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	
+	#glaucoma a {
+		color:fff;
+	}
+	
+	
+	#retinal {
+		overflow: auto;
+		width: 322px;
+		height: 375px;
+		color: #fff;
+		position: absolute;
+		float: over;
+		right: 127px;
+		top: 20px;
+		z-index: 2;
+		border-left: 1px #999 solid;
+		border-right: 2px #ccc solid;
+		border-top: 1px #999 solid;
+		border-bottom: 2px #ccc solid;
+		font-family: arial,helvetica,sans-serif;
+		font-size: 12px;
+		line-spacing: 18px;	
+		scrollbar-face-color:#3E647E;
+		scrollbar-arrow-color:#999999;
+	}
+	
+	#retinal p {
+		margin: 10px;
+	}
+	
+	#retinal h2 {
+		margin: 12px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	
+	#retinal h3 {
+		margin: 12px;
+		font-weight: bold;
+		font-size: 12px;
+		border-bottom: 1px solid #fff;
+	}
+	
+	#retinal a {
+		color:fff;
+	}
+	
+	
+	#botox {
+		overflow: auto;
+		width: 322px;
+		height: 375px;
+		color: #fff;
+		position: absolute;
+		float: over;
+		right: 127px;
+		top: 20px;
+		z-index: 2;
+		border-left: 1px #999 solid;
+		border-right: 2px #ccc solid;
+		border-top: 1px #999 solid;
+		border-bottom: 2px #ccc solid;
+		font-family: arial,helvetica,sans-serif;
+		font-size: 12px;
+		line-spacing: 18px;		
+		scrollbar-face-color:#3E647E;
+		scrollbar-arrow-color:#999999;
+	}
+	
+	#botox p {
+		margin: 10px;
+	}
+	
+	#botox h2 {
+		margin: 12px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	
+	#botox a {
+		color:fff;
+	}
+	
+</style>
+</head>
+<body bgcolor="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"  onload="preloadImages();"><center>
+<table id="topbar" width="800" height="91" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<img src="images/headers/top_left.jpg" width="259" height="91" alt="" border="0"></td>
+<td>
+<a href="index.html"><img src="images/headers/top_middle.gif" width="299" height="91" alt="" border="0"></a></td>
+<td>
+<img src="images/headers/top_right.jpg" width="242" height="91" alt="" border="0"></td>
+</tr>
+</table>
+<table id="menubar" width="800" height="33" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<a href="index.html" onmouseover="changeImages('home', 'images/buttons/home_over.gif'); return true;" onmouseout="changeImages('home', 'images/buttons/home_off.gif'); return true;"><img name="home" src="images/buttons/home_off.gif" width="85" height="33" alt="Home" border="0"></a></td>
+		<td>
+			<a href="surgeon.html" onmouseover="changeImages('surgeon', 'images/buttons/surgeon_over.gif'); return true;"  onmouseout="changeImages('surgeon', 'images/buttons/surgeon_off.gif'); return true;"><img name="surgeon"  src="images/buttons/surgeon_off.gif" width="160" height="33" alt="Surgeon" border="0"></a></td>
+		<td>
+			<a href="testimony.html" onmouseover="changeImages('testimony', 'images/buttons/testimony_over.gif'); return true;"  onmouseout="changeImages('testimony', 'images/buttons/testimony_off.gif'); return true;"><img name="testimony"  src="images/buttons/testimony_off.gif" width="142" height="33" alt="Testimony" border="0"></a></td>
+		<td>
+			<a href="conditions.html" onmouseover="changeImages('conditions', 'images/buttons/conditions_over.gif'); return true;"  onmouseout="changeImages('conditions', 'images/buttons/conditions_off.gif'); return true;"><img name="conditions"  src="images/buttons/conditions_off.gif" width="169" height="33" alt="Conditions" border="0"></a></td>
+		<td>
+			<img name="services"  src="images/buttons/services_on.gif" width="108" height="33" alt="Services" border="0"></td>
+		<td>
+			<a href="contact.html" onmouseover="changeImages('contact', 'images/buttons/contact_over.gif'); return true;" onmouseout="changeImages('contact', 'images/buttons/contact_off.gif'); return true;"><img name="contact"  src="images/buttons/contact_off.gif" width="136" height="33" alt="Contact" border="0"></a></td>
+	</tr>
+</table>
+
+
+<table id="mainpart" width="800" height="476" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<img src="images/services/services01.jpg" width="342" height="19" alt=""></td>
+		<td rowspan="8"><div style="position:relative; height:410px; border:0px; margin:0px; padding:0px;"><img src="images/services/services02.jpg" width="458" height="410" alt=""><div id="botox" style="display:none">
+
+<h2>Botox</h2>
+    
+<p>You laugh. You frown. You concentrate. And over time, those expressions leave their mark upon your face. Until today, there wasn't a lot you could do about it.</p>
+
+<p>But today there's BOTOX Cosmetic. A simple, non-surgical procedure that can dramatically reduce even your toughest wrinkles within days. One ten minute treatment - a few tiny injections-relaxes the muscles between your eyebrows that cause lines to form, and keeps them relaxed up to four months. AND it's FDA approved for use on Glabellar Lines.</p>
+
+<br />
+<center><img src="images/services/botoxlogo.gif" width="250" height="127"></center>
+<br />
+
+<p><b>What are Glabellar Lines?</b></p>
+
+<p>Glabellar lines are the wrinkles between the eyebrows that form when you frown. To make this expression, you move the corrugator and procerus muscles, which are located between and above the eyebrows.</p>
+
+<p><b>How are these frown lines formed?</b></p>
+
+<p>Movement of facial muscles can cause the skin between the eyebrows to crease. As skin becomes less elastic over time, repeated frowning may create visible lines and wrinkles - even when your face is relaxed.</p>
+
+</div>
+
+<div id="cataract">
+<h2>Advanced Cataract Care</h2>
+
+<p>Cataracts are the leading cause of poor vision for adults over 60 years of age.  Although cataract surgery has been practiced for over 2000 years, there have been two critical technological innovations in the last 50 years that have made cataract surgery the safe and effective procedure it is today.</p>
+
+<br />
+<center><img src="images/services/mfb_post_with_patient.jpg" width="278" height="230"></center>
+<br />
+
+<p>The first breakthrough was the intraocular lens implant, first used in 1948, to replace the natural lens of the eye.  Over fifty years of development have provided us with intraocular lenses well suited to today's modern surgical techniques.</p>
+
+<!-- Photo Rezoom -->
+
+<p>The second major development was the widespread adoption of ultrasonic cataract removal in the late 1980s.  Ultrasonic cataract removal uses a tiny titanium probe vibrating 40,000 times per second to generate sound waves which dissolve the cataract and allow it to be suctioned away.  Modern ultrasonic units make this possible through an incision only 1/8 of an inch in size!</p>
+
+<!-- Photo SoverignWS -->
+
+<!-- Insert eyeMaginations clip from DVD -->
+
+<p>Along with these developments have come new surgical techniques.  At Visionary Eyecare & Surgery, Dr. Bias performs state of the art NO SHOT, NO STITCH, NO PATCH cataract removal. 'No shot' refers to the anesthesia technique.  Previously, a long needle was used to inject anesthesia directly around the eye.  Now, new surgical techniques along with the speed in which Dr. Bias performs the procedure allow the vast majority of patients to have cataract surgery with only anesthetic drops applied to the surface of the eye.</p>
+
+<!-- MFB Intra Op image  -->
+
+<p>'No Stitch' refers to the fact that such a tiny incision is created that no sutures are necessary.  Older techniques required several stitches.  The presence of these sutures often created high degrees of astigmatism in patients after surgery, as well as many post-operative visits for suture removal.  Patients often found their vision took months to stabilize.  Now, with the 'No Stitch' procedure, astigmatism created by the surgery is rare, and most patients have stable vision and can receive their new glasses in a few weeks.</p>
+
+<p>'No Patch' refers to after the surgery and the fact that the patient can go home without their eye being patched.  The reason for this is that since there is 'No Shot', the patient is able to control their eyelid and blink normally after surgery, making the patch unnecessary.</p>
+
+<!-- DrBias Post and MFB Post with Patient1 images  -->
+
+<p>If you think your vision is affected by cataracts, give our office a call to schedule a comprehensive evaluation. We will be happy to explain more about these groundbreaking advancements in cataract care, and determine if cataract removal is right for you.</p>
+
+<br />
+<center><img width="250" height="172" src="images/services/smilepair.jpg"></center>
+<br />
+
+<a name="catfaqhome"></a><h2>Frequently Asked Questions:</h2>
+
+<ul>
+<li><a href="#whatis">What is a cataract?</a></li>
+<li><a href="#how">How can I tell if I have a cataract?</a></li>
+<li><a href="#when">When should my cataracts be removed?</a></li>
+<li><a href="#howmuch">How much does cataract removal cost?</a></li>
+<li><a href="#astigm">What about my astigmatism?</a></li>
+</ul>
+
+<p><a name="whatis"></a><b>What is a cataract?</b></p>
+
+<p>A cataract is a clouding of the lens of the eye, which is normally clear and transparent. When a cataract develops, the lens becomes foggy like a frosted window. There are many misconceptions about cataracts. They are not tumors, or a new growth of skin or tissue over the eye. They don't spread from eye to eye, and they're not caused by using your eyes too much. In fact, no one knows what causes cataracts, or how to prevent them. They usually develop gradually over a period of years, and are considered a normal part of the aging process. Most of us, if we live long enough, will develop cataracts. </p>
+
+<!-- nuclear cat and cortical cat images  -->
+
+<p><a href="#catfaqhome">BACK</a></p>
+
+<p><a name="how"></a><b>How can I tell if I have a cataract?</b></p>
+
+<br />
+<center><img src="images/services/rearviewmirrorglare.jpg" width="275" height="179"></center>
+<br />
+
+<p>Some of the more common symptoms include blurred or fuzzy vision, double vision, problems driving at night, sensitivity to light and glare, and the feeling of a 'film' over your eye. However, cataracts can be diagnosed only by an ophthalmologist or an optometrist, using special instruments to look into the eye as part of the painless examination process. </p>
+
+<p><a href="#catfaqhome">BACK</a></p>
+
+<p><a name="when"></a><b>When should my cataracts be removed?</b></p>
+
+<p>This is something you and Dr. Bias should decide together. Usually, cataracts are removed when they have progressed to the point where they interfere with your normal, daily activities. </p>
+
+<p><a href="#catfaqhome">BACK</a></p>
+
+<p><a name="howmuch"></a><b>How much does cataract removal cost?</b></p>
+
+<p>The cost of cataract surgery is covered by Medicare and other insurance plans. Dr. Bias is a participating physician in the Medicare reimbursement program. Our office staff is well-trained in Medicare reimbursement regulations and will fill out your paperwork so you will receive the maximum reimbursement possible. You are responsible for any co-pays required by your insurance carrier.</p>
+
+<p><a href="#catfaqhome">BACK</a></p>
+
+<p><a name="astigm"></a><b>What about my astigmatism?</b></p>
+
+<p>While modern state of the art cataract removal performed by Dr. Bias rarely causes any astigmatism, many patients suffer from some degree of astigmatism prior to their cataract removal. Astigmatism occurs when the cornea has an oval shape like a football, as opposed to being round like a basketball. This causes light rays entering the eye to be focused at more than one point on the retina, causing a reduction in vision. Symptoms of astigmatism include: image distortion and shadows, double vision, tilted images, light sensitivity, glare, and tired eyes.</p>
+
+<p>Fortunately, Dr. Bias specializes in treating astigmatism at the time of cataract removal, with limbal relaxing incisions. These micro incisions performed in conjunction with the cataract procedure usually reduce or eliminate existing astigmatism, allowing for sharper vision after cataract surgery. </p>
+
+<p>For more information, <a href="#" onmousedown="javascript: document.getElementById('botox').style.display='none'; document.getElementById('cataract').style.display='none'; document.getElementById('lasik').style.display='none'; document.getElementById('ck').style.display='none'; document.getElementById('glaucoma').style.display='none'; document.getElementById('retinal').style.display='none'; document.getElementById('astig2').style.display='';">click here</a> or ask for our brochure on astigmatism at your next visit.</p>
+
+<p><a href="#catfaqhome">BACK</a></p>
+
+</div>
+
+<div id="lasik" style="display:none">
+
+<h2>CustomVue (TM) Laser Vision Correction (LASIK) by VISX</h2>
+
+<!-- Visxlogo -->
+
+<p>By now, almost everyone is aware that treatments exist to correct your nearsightedness or farsightedness, and reduce or eliminate your need for glasses to see in the distance. Chances are, several of your friends or family members are experiencing the joys of living without glasses or contact lenses as a result of laser vision correction.  You've heard the excitement in their voices, noticed the boost in their confidence levels, and watched the quality of their lives improved with newfound freedoms. </p>
+
+<p>Millions of Americans are enjoying these life-enhancing benefits, and millions more, just like you, are exploring the procedure that could free them from the worries of glasses and contact lenses. Thanks to a revolutionary breakthrough in technology, now is the time for you to join millions of other happy patients making the dream of clear vision become a reality.  </p>
+
+<p align="center"><img src="images/services/eyechart.gif" width="203" height="138"></p>
+
+<p>Until now, your treatment was based on diagnostic technology similar to that used for the prescription of eye glasses or contact lenses. However, with Visionary Eyecare & Surgery's addition of the CustomVue WaveScan (TM) System by VISX, we can produce a precise and more detailed analysis of your vision, and provide you with a more personalized approach to laser vision correction.</p>
+
+<!-- customvue 2c image -->
+
+<p>With the diagnostic and treatment technologies of the WaveScan System, Dr. Bias can develop a personalized laser vision correction plan that addresses your individual needs. </p>
+
+<!-- correctivelens image -->
+
+<p>There are two parts to the VISX WaveScan System. First, it includes a diagnostic device that maps the entire optical path of your eye. This WavePrint (TM) Map, called the "fingerprint of your vision," provides the surgeon with precise and detailed information about your vision. </p>
+
+<p align="center"><img src="images/services/biaswavescan.jpg" width="275" height="220"></p>
+
+<p>Secondly, the WaveScan System incorporates the STAR S4 (TM) laser from VISX with two exclusive features: Variable Spot Scanning (TM) and 3D ActiveTrak (TM) technology. Variable Spot Scanning (VSS (TM)) allows for a larger treatment area and offers the physician greater flexibility in developing a more personalized laser vision procedure, when pupil size may be a consideration. </p>
+
+<p>3D ActiveTrak automatically and instantaneously tracks the minute movements of your eye in all three dimensions during the laser treatment. This unique feature means you no longer have to hold your eye perfectly still, but can relax, knowing your treatment is precisely centered on your eye. The doctor uses these exclusive technologies along with the WavePrint Map to provide laser vision correction care based on your personal vision needs. </p>
+
+<!-- Photo of Star S4 -->
+
+<p>We'd love to discuss these new advances in customized laser vision correction with you at your convenience. Call Visionary Eyecare & Surgery today for your personal consultation, the first step to a clearer tomorrow!</p>
+
+<p>To learn more about the VISX WaveScan CustomVue system, visit <a target="_blank" href="http://www.visx.com">visx.com</a> or <a target="_blank" href="http://www.personalbestvision.com">personalbestvision.com</a></p>
+
+<p align="center"><img src="images/services/customvue.gif" width="233" height="82"></p>
+
+<p>To learn more about the VISX CustomVue Laser Center that Dr. Bias utilizes, <a target="_blank" href="http://www.stlouisrefractive.com">click here</a>.</p>
+
+<a name="lvcfaq"></a><h2>Frequently Asked Questions:</h2>
+
+<ul>
+<li><a href="#confused">I'm confused by all the terminology. What do the different names mean?</a></li>
+<li><a href="#prk">What is PRK?</a></li>
+<li><a href="#lasik">What is LASIK?</a></li>
+<li><a href="#lasek">What is LASEK?</a></li>
+<li><a href="#candidate">Who is a candidate for LASIK?</a></li>
+<li><a href="#lenses">What about my contact lenses?</a></li>
+<li><a href="#pain">Is LASIK painful?</a></li>
+<li><a href="#both">Can I have laser vision correction on both eyes at the same time?</a></li> 
+<li><a href="#long">How long does the procedure take?</a></li> 
+<li><a href="#glasses">Will I need glasses after I have this procedure performed?</a></li> 
+<li><a href="#payment">What LASIK payment options are available?</a></li> 
+<li><a href="#laser">How does a laser know what to correct in my eyes?</a></li> 
+<li><a href="#map">What is the WavePrint Map I've heard about and how is it made?</a></li> 
+<li><a href="#wavescan">How accurate is WaveScan technology?</a></li> 
+<li><a href="#painwave">Does the WaveScan scanning process hurt?</a></li>
+<li><a href="#workwave">How does the WaveScan work?</a></li> 
+<li><a href="#personal">What do you mean by 'Personal Best' vision?</a></li> 
+<li><a href="#wavescanme">What can WaveScan technology do for me?</a></li> 
+<li><a href="#fda">Is the WaveScan procedure FDA approved?</a></li> 
+<li><a href="#results">What are some of the results of WaveScan procedure to date? </a></li>
+</ul>
+
+<p><a name="confused"></a><b>I'm confused by all the terminology. What do the different names mean?</b></p>
+
+<p>Laser Vision Correction (LVC) is the "generic" term used to describe any procedure using the excimer laser to correct distance vision. The excimer laser uses a cool beam of light to precisely reshape the cornea (the front clear surface of the eye), allowing distant objects to come into focus more clearly without glasses. There are numerous different companies that produce excimer lasers for this procedure, however VISX is the dominant market leader, accounting for approximately 75% of all LVC procedures performed in this country each year.</p>
+
+<p align="center"><img src="images/services/excimerhair.jpg"><br /><i>Electron micrograph of a human hair<br />sculpted by the excimer laser,<br />showing the extreme precision<br />of this technology</i></p>
+
+<p>In addition to different laser manufacturers, there are also several different ways to perform the LVC procedure itself. The three most popular surgical techniques are called LASIK, PRK (surface ablation), and LASEK (see detailed explanations below). The differences have to do with how the cornea is prepared prior to laser delivery. All three options have their benefits, and in certain situations one treatment may be preferred over the others. That is why it's important that your LVC surgeon is skilled and experienced in all three treatment techniques. At Visionary Eyecare & Surgery, Dr. Bias has been performing LVC since 1998, and can discuss with you which treatment mode is best for your situation.</p>
+
+<p>It is important to realize that once the cornea is prepared for laser delivery by one of these methods, the laser treatment itself is exactly the same regardless of which procedure you choose. That is why numerous scientific studies have shown that there is no difference in visual outcomes between LASIK, PRK, and LASEK.</p>
+
+<p><a href="#lvcfaq">BACK</a></p>
+
+<p><a name="prk"></a><b>Photorefractive Keratectomy (PRK) or "Surface Ablation"</b></p>
+
+<p>PRK was the first surgical procedure developed to reshape the cornea using the excimer laser. Granted FDA approval in 1995 after years of research and clinical trials, the excimer laser uses a cool beam of light to sculpt the cornea to enhance uncorrected vision. In PRK, the front surface of the cornea, the epithelium, is gently removed with a smooth brush prior to laser delivery. PRK works best for patients with low to moderate nearsightedness and farsightedness, with or without astigmatism. Having been largely supplanted by LASIK over the past several years, PRK is making a resurgence, owing to its excellent safety profile and compatibility with new wavefront laser technology.</p>
+
+<p align="center"><img src="images/services/prk.jpg" width="240" height="190"></p>
+
+<p>It is important not to confuse PRK with RK, which stands for radial keratotomy. RK was the precursor to excimer laser vision correction, where small incisions were made into the cornea with a blade to change its shape and thus alter your vision. RK is no longer performed in this country, having been supplanted years ago by the precise accuracy of the excimer laser and the PRK technique.</p>
+
+<!-- PLAY PRK CLIP -->
+
+<p><a href="#lvcfaq">BACK</a></p>
+
+<p><b><a name="lasik"></a>Laser Assisted In-situ Keratomileusis (LASIK)</b></p>
+
+<p>After years of off label use, LASIK was FDA approved in 1999. In LASIK, a thin wafer of corneal tissue is sculpted with a microkeratome. This flap is lifted back, and the excimer laser reshapes the underlying corneal tissue. The flap is then replaced, allowing for a remarkably rapid improvement in vision with little or no discomfort. Patients often achieve 20/20 vision the very next day, and these dramatic results have led LASIK to become the refractive procedure of choice worldwide. LASIK is indicated for almost all levels of nearsightedness, as well as for farsightedness and astigmatism.</p>
+
+<p align="center"><img src="images/services/lasik.jpg" width="240" height="190"></p>
+
+<p><a href="#lvcfaq">BACK</a></p>
+
+<p><a name="lasek"></a><b>Laser-assisted subepithelial keratectomy (LASEK)</b></p>
+
+<p>LASEK, the newest development in laser vision correction, combines the best attributes from the LASIK and PRK procedures. Instead of using a microkeratome to create the flap, an epithelial flap is gently fashioned without a blade, and the excimer laser reshapes the cornea underneath. The epithelium is then repositioned to complete the procedure. While visual recovery is not typically as rapid as with LASIK, patients usually experience less discomfort postoperatively compared to PRK.</p>
+
+<p><a href="#lvcfaq">BACK</a></p>
+
+<p><a name="candidate"></a><b>Who is a candidate for LASIK?</b></p>
+
+<p>The patient must meet the following conditions: </p>
+
+<ul>
+<li>Must undergo a complete eye examination and refractive surgery workup</li>
+<li>Must have no active eye disease</li>
+<li>Must have realistic expectations concerning the procedure </li>
+<li>Cannot have systemic disease that could affect the wound healing process</li>
+<li>Must be 18 years of age or older </li>
+</ul>
+
+<p><a href="#lvcfaq">BACK</a></p>
+
+<p><a name="lenses"></a><b>What about my contact lenses?</b></p>
+
+<p>Patients with soft contact lenses must discontinue wear at least two weeks prior to their workup and then through the time leading up to their surgery. Patients with hard or gas-permeable lenses must discontinue wear at least three to four weeks prior to their workup, and again up until their surgery.  Failure to do so may cause an inaccurate result. </p>
+
+<p><a href="#lvcfaq">BACK</a></p>
+
+<p><a name="pain"></a><b>Is LASIK painful?</b></p>
+
+<p>There is very little discomfort during the surgery.  The eye is numbed using anesthetic eye drops.  After the surgery, there can be mild discomfort, which is usually gone within 24 hours. </p>
+
+<p><a href="#lvcfaq">BACK</a></p>
+
+<p><a name="both"></a><b>Can I have laser vision correction on both eyes at the same time?</b></p>
+
+<p>Yes, most patients have both eyes done on the same day. </p>
+
+<p><a href="#lvcfaq">BACK</a></p>
+
+<p><a name="long"></a><b>How long does the procedure take?</b> </p>
+
+<p>The actual procedure itself takes about 15 minutes.  However, your total time at our facility will be approximately 1 1/2 hours due to preparation prior to the procedure and observation following it. </p>
+
+<p><a href="#lvcfaq">BACK</a></p>
+
+<p><a name="glasses"></a><b>Will I need glasses after I have this procedure performed?</b> </p>
+
+<p>While the results with this procedure are highly predictable, a few people will need glasses to get their best possible visual acuity. Generally, this is less than 10% of the patients.  If you are over 40, you'll likely need glasses for reading.</p>
+
+<p><a href="#lvcfaq">BACK</a></p>
+
+<p><a name="payment"></a><b>What LASIK payment options are available?</b> </p>
+
+<p>Payment for LASIK can be made with cash, check, Mastercard, Visa, or American Express. Additionally, Visionary Eyecare & Surgery is happy to provide affordable financing options that can allow you to enjoy your "Personal Best Vision" for as little as $44 a month, per eye. To learn more about payment and financing options click here to visit <a target="_blank" href="http://www.stlouisrefractive.com">St. Louis Refractive Surgery Center</a></p>
+
+<p><a href="#lvcfaq">BACK</a></p>
+
+<p><a name="laser"></a><b>How does a laser know what to correct in my eyes?</b></p>
+
+<p>Laser Vision Correction is based on precise measurements of the imperfections in your vision. These measurements are taken with a powerful scanning measurement tool used in the WaveScan procedure. The scan information is transferred to the laser to guide the treatment.</p>
+
+<p><a href="#lvcfaq">BACK</a></p>
+
+<p><a name="map"></a><b>What is the WavePrint Map I've heard about and how is it made?</b> </p>
+
+<p align="center"><img src="images/services/waveprintmap.gif" width="280" height="216"></p>
+
+<p>WavePrint scanning technology provides a measurement and a visual representation of your vision based on the behavior of light waves. It compares light passing through your eye to the same light pattern from an eye that needs no vision correction. The 'map' is the output of this scanning and it captures the unique imperfections of a person's visual pathway. </p>
+
+<p><a href="#lvcfaq">BACK</a></p>
+
+<p><a name="wavescan"></a><b>How accurate is WaveScan technology?</b></p>
+
+<p>WaveScan technology identifies and measures imperfections in an individual's vision 25 times more precisely than standard methods used for glasses and contact lenses. </p>
+
+<p><a href="#lvcfaq">BACK</a></p>
+
+<p><a name="painwave"></a><b>Does the WaveScan scanning process hurt?</b></p>
+
+<p>No, the WaveScan is a measurement device that you simply gaze into while it measures the vision imperfections in your eye.</p>
+
+<p><a href="#lvcfaq">BACK</a></p>
+
+<p><a name="workwave"></a><b>How does the WaveScan work?</b></p>
+
+<p>First, the WaveScan technology measures the imperfections in the eyes and produces a WavePrint map. Much like a fingerprint, no two WavePrint maps are alike. Then, the treatment information is transferred to the VISX STAR S4 (TM) laser. The doctor then uses that information to fine-tune the procedure thereby providing a new level of precision and accuracy. </p>
+
+<p><a href="#lvcfaq">BACK</a></p>
+
+<p><a name="personal"></a><b>What do you mean by 'Personal Best' vision?</b></p>
+
+<p>Personal Best Vision refers to the new level of laser vision correction that can be achieved with the WaveScan procedure. Since WaveScan technology can measure and correct imperfections that are unique to each person's vision with 25 times more precision than standard measurements for glasses and contact lenses, individuals can potentially achieve the best possible vision for their eyes. </p>
+
+<p><a href="#lvcfaq">BACK</a></p>
+
+<p><a name="wavescanme"></a><b>What can WaveScan technology do for me?</b></p>
+
+<p>As shown in the clinical study, WaveScan has the potential to produce better vision than is possible with glasses and contact lenses. It tailors a distinct correction for each individual; in fact each treatment is "designed" by the unique characteristics of your individual eye. </p>
+
+<p><a href="#lvcfaq">BACK</a></p>
+
+<p><a name="fda"></a><b>Is the WaveScan procedure FDA approved?</b></p>
+
+<p>Based on numerous clinical studies, the U.S. FDA has approved the VISX WaveScan CustomVue laser vision correction procedure as safe and effective for treating nearsightedness, farsightedness, and astigmatism.</p>
+
+<p><a href="#lvcfaq">BACK</a></p>
+
+<p><a name="results"></a><b>What are some of the results of WaveScan procedure to date?</b></p>
+
+<p>In the FDA study, one year after the VISX CustomVue (TM) procedure: </p>
+
+<ul>
+<li>100% of participants could pass a driving test without glasses or contact lenses</li>
+<li>98% of participants could see 20/20 or better without glasses or contact lenses</li>
+<li>70% of participants could see <b>better than 20/20</b> without glasses or contact lenses</li>
+</ul>
+
+<p>In addition, many participants reported that they had clearer, better vision both during the day and at night, compared to their vision with glasses or contact lenses before the procedure.</p>
+
+<p><a href="#lvcfaq">BACK</a></p>
+
+</div>
+
+<div id="ck" style="display:none">
+
+<h2>NearVision CK</h2>
+
+<p>It seems to happen overnight.  Suddenly, you can no longer read a menu, check your watch, or review the scores on your golf card.  Rest assured, you are not alone.  Millions of baby boomers like you are losing their near vision as part of the natural aging process, a condition known as Presbyopia.</p>
+
+<p>Now imagine turning back the clock on your vision to a time when you could see clearly without the hassle of reading glasses.  Today you can with the only technology that is FDA approved for the treatment of presbyopia, NearVision CK.</p>
+
+<br />
+<center><img src="images/services/nvcklogo.gif" width="298" height="47"></center> 
+<br />
+
+<p>Visionary Eyecare & Surgery is pleased to offer NearVision CK (Conductive Keratoplasty), an exciting advancement in vision correction that uses radio frequency (RF) energy instead of a laser to reshape your cornea, allowing your near vision to come back into focus.  Because there is no cutting, or removal of tissue with the laser, and typically only one eye is treated, NearVision CK is extremely safe and painless, and can be performed in our office in a matter of minutes. And Dr. Bias is one of the first and only eye surgeons in the state of Missouri certified to perform NearVision CK.</p>
+
+<p><b>If you are</b>:</p>
+
+<ul>
+<li>Age 45 or older</li>
+<li>Have good distance vision without glasses</li>
+<li>And, struggle with reading glasses when checking a price tag or dialing a cell phone</li>
+</ul>
+
+<p><b>You may be a candidate for NearVision CK</b>.</p>
+
+<!-- Insert photo next to above -->
+
+<p>To take the first step toward better near vision without the hassle of reading glasses, it's time to schedule a full eye examination. Dr. Bias can diagnose your specific vision problem and determine whether NearVision CK is right for you.  Make today the day you decide to safely see young again.</p>
+
+<p><a target="_blank" href="http://www.myclearvision.com">Click here</a> to learn more about NearVision CK.</p>
+
+</div>
+
+<div id="glaucoma" style="display:none">
+
+<h2>Glaucoma</h2>
+
+<p>Glaucoma, one of the leading causes of blindness, is estimated to affect 1 of every 50 adults. Although glaucoma can occur at any age, the risk of developing the disease increases dramatically after the age of 35. Glaucoma is also more likely to develop in persons who are severely nearsighted, persons with a family history of the condition, diabetics and blacks. Because the symptoms of early glaucoma are so slight, the disease often goes unnoticed until permanent vision loss has occurred. However, with early diagnosis and careful treatment, visual damage from glaucoma can be prevented. </p>
+
+<h2>What is Glaucoma?</h2>
+
+<p>When light enters the eye, an image is focused onto the retina, the delicate nerve layer lining the inside back wall of the eye. The retina then transforms the light images into electrical impulses which are carried to the brain by the optic nerve. Glaucoma is a disease which damages the optic nerve. Damage to the optic nerve and retina cause blind spots in the field of vision. If the entire nerve is destroyed, blindness will occur.</p>
+
+<!-- Pictures of glaucoma field loss -->
+  
+<h2>What causes Glaucoma?</h2>
+
+<p>Glaucoma is usually caused by an increase in the fluid pressure inside the eye. The front part of the eye contains a clear, nourishing fluid called aqueous which constantly circulates through the eye. Normally, this fluid leaves the eye through a drainage system and returns to the blood stream.</p>
+
+<p>Glaucoma can occur from an overproduction of fluid, or when the drainage system becomes blocked, causing fluid pressure to increase. The high pressure causes damage to the optic nerve, resulting in permanent vision loss. The exact reason the fluid system in the eye stops functioning properly is not completely understood. Much research is being done in this area to further our understanding of glaucoma.</p>
+
+<p>Some of the risk factors for developing glaucoma include:</p>
+
+<ul>
+<li>High Eye Pressure</li>
+<li>Increasing Age</li>
+<li>African-American Heritage</li>
+<li>Family History</li>
+<li>Diabetes</li>
+<li>Nearsightedness</li>
+<li>Long-Term Steroid Treatment</li>
+<li>Injury or Trauma to the Eye</li>      
+</ul>
+   
+<h2>What are the symptoms of Glaucoma?</h2>
+
+<p>The early symptoms associated with chronic open angle glaucoma, the most common type, are usually unnoticeable. At first, in most cases, the build up of pressure is gradual without any discomfort or pain. Most people do not detect a change in their vision until substantial vision loss has occurred. Certain parts of peripheral (side) vision are affected first, with the top, sides, and bottom of the field of vision becoming decreased. Later in the course of the disease, central vision becomes affected, and difficulty with night vision might be experienced. And, if left untreated, total blindness will result.</p>
+
+<h2>How is Glaucoma diagnosed?</h2>
+
+<p>In many cases, glaucoma can be detected in a routine eye examination before the patient experiences any vision problems. At Visionary Eyecare & Surgery, patients undergo a comprehensive dilated eye examination by a physician experienced in glaucoma treatment, along with measurements of the intraocular pressure and state of the art glaucoma diagnostic testing, to include computerized visual fields.</p>
+
+<p align="center"><img src="images/services/hrtnerve.jpg"><br /><i>An HRT study showing<br />optic nerve damage<br />from glaucoma.</i></p>
+
+<p>Plus, we are pleased to offer our patients the Heidelberg Retinal Tomograph (HRT), which is the most advanced glaucoma diagnostic device on the market today.  The HRT is a diagnostic imaging device that takes direct cross sectional images of the optic disc and retinal nerve fiber layer to aid in the detection of glaucoma. This allows our patients the best chance at early detection and initiation of treatment as needed for their glaucoma.</p>
+
+<!-- Insert photo of HRT -->
+
+<h2>Is there any treatment for Glaucoma?</h2>
+
+<p>Glaucoma can be treated through the use of eye drops, laser surgery, and glaucoma filtration surgery. The treatment of glaucoma is usually a lifelong process, requiring frequent monitoring and constant therapy. Typically, patients with glaucoma should be examined every four to six months for the rest of their lives.  If you are concerned that you or a loved one may be at risk for this disease, please contact us for a consultation. </p>
+
+
+</div>
+
+<div id="retinal" style="display:none">
+
+<h2>Retinal Disease: Diabetic Eye Disease and Macular Degeneration</h2>
+
+<h3>Diabetic Eye Disease</h3>
+
+<p>Diabetic Retinopathy is a leading cause of blindness among adults.  Approximately 25 percent of current diabetics have some form of the disease, and 90 percent of diabetics may experience retinopathy over the course of their life.</p>
+
+<h2>What is Diabetic Retinopathy?</h2>
+
+<p>Diabetic retinopathy is a complication of diabetes mellitus which causes abnormalities in the tiny blood vessels nourishing the retina.  Damage to these vessels causes them to leak fluid and blood, which ultimately damages the retina.  Left untreated, diabetic retinopathy can result in severe visual loss, including blindness.</p>
+
+<!-- Photos of normal retina and retinopathy -->
+
+<h2>What are the symptoms?</h2>
+
+<p>Because vision is often unaffected early in the disease and there are no other symptoms of diabetic retinopathy, these changes in the retina can go unnoticed unless detected by an eye examination.  A comprehensive dilated evaluation is the best protection against the development and progression of diabetic retinopathy.</p>
+
+<h2>Is there any treatment?</h2>
+
+<p>Prevention is the best form of treatment. Studies have shown that patients who are successful at achieving "tight glucose control", have a much lower rate of visual loss from diabetic retinopathy compared to those with poorly controlled glucose levels. As part of a comprehensive diabetes eye exam, Dr. Bias counsels all patients regarding their glucose control, and will communicate with the physician in charge of the diabetes management, to assure optimum care for the patient.</p>
+
+<p>When diabetic retinopathy progresses and begins to decrease vision, then laser treatment is usually required.  Lasers are typically used to seal blood vessels that are leaking, as well as to prevent the development of new abnormal blood vessels.  Visionary Eyecare & Surgery offers the latest technology in diabetic laser eye care, and treatments are performed on an outpatient basis in our clinic.</p>
+
+<!-- Photo of laser -->
+
+<p>Early detection and management of diabetic retinopathy is important to slow down or stop the damage to the retina.  Even without any visual symptoms, <b>all diabetics should receive a dilated eye examination at least once a year</b>, and more often as determined by their physician if retinopathy is present.</p>
+
+
+<h3>Macular Degeneration</h3>
+
+<p><b>What is the Macula?</b></p>
+
+<p>The macula is a very small area of the retina which is responsible for central and color vision. The macula allows us to read, drive, and perform detailed work. Surrounding the macula is the peripheral retina which is responsible for side and night vision.  
+
+<p>The retina is a thin layer of light sensitive tissue which lines the back of the eye. When light enters the eye, it is focused by the cornea and the lens onto the retina. The retina then transforms the light images into electrical impulses which are sent to the brain through the optic nerve.
+
+<!-- Picture of the retina -->
+
+<p><b>What is Macular Degeneration?</b></p>
+
+<p>Macular Degeneration is the leading cause of impaired reading or detailed vision. It is caused by the breakdown of the macula, the central portion of the retina. Although macular degeneration causes distortion of central and color vision, side vision is not affected. There are two forms of Macular Degeneration, "dry" and "wet".</p>
+
+<p>"Dry" Macular Degeneration is most commonly a result of the natural aging process. With time, the retinal tissues break down and become thin. This deterioration causes a loss of function of the macula. </p>
+
+<p align="center"><img src="images/services/macdeffect.gif" width="178" height="128"><br /><i>Simulated vision loss<br />from Macular Degeneration</i></p>
+
+<p>In about 10% of cases of macular degeneration, aging of the retina is compounded by leakage of new, abnormal blood vessels which have grown into the macula. This is known as "Wet" Macular Degeneration. Blood and leaking fluid from these abnormal vessels destroy the macula, causing vision to become distorted and blurred. The formation of dense scar tissue may block out central vision to a severe degree.</p>
+
+<p><b>How is Macular Degeneration diagnosed? </b></p>
+
+<p>A lighted instrument called an ophthalmoscope is used to examine the retina. With this instrument your ophthalmologist can see areas of the retina that might be affected. In addition, some special tests may be administered. Fluorescein angiography is used to detect leakage from new, abnormal blood vessels. Fluorescein dye is injected into the patient's vein, and photos of the retina are then taken. These images will detect any abnormal leakage, and can help direct treatment.</p>
+
+<!-- Photo of FA -->
+
+<p><b>How is Macular Degeneration treated?</b></p>
+
+<p>While there is no cure for Macular Degeneration, the "Dry" form can be treated with a special formulation of vitamin supplements. Dr. Bias has extensive experience in which supplements provide the best treatment, and guides his patients to the correct choice as part of their evaluation. Additionally, patients are instructed in the use of an Amsler Grid, which can help them to monitor their macular health on a daily basis.</p>
+
+<p>For "Wet" Macular Degeneration there are two methods of treatment using a laser that can dramatically slow the progress of the disease, laser photocoagulation and photodynamic therapy.</p>
+
+<p>Laser Photocoagulation involves using a hot laser to concentrate a beam of high-energy light to destroy abnormal blood vessels. Unfortunately, this also creates a permanent blind spot in the field of vision. The loss of vision, however, is usually less severe than the eventual loss of vision associated with the disease itself. </p>
+
+<p>Photodynamic therapy uses a 'light-activated' drug, Visudyne, to slow abnormal vessel growth. The Visudyne drug is injected into the patient's arm, followed by the application of a non-heat producing laser. The drug is activated by the light of the laser and begins closing these abnormal vessels and thereby slowing the progress of vision loss.</p>
+
+<!-- Photo of laser treatment -->
+
+<p>Regular eye examinations are important in detecting Macular Degeneration, as the symptoms of the disease often go unnoticed early on.  Prompt detection may help to prevent further vision loss, so if you are experiencing central or color vision problems, please schedule an appointment with Visionary Eyecare & Surgery today to see if you may be at risk for losing vision from Macular Degeneration.</p>
+
+</div>
+
+
+<div id="astig2" style="display:none">
+
+<h2>Advanced Cataract Care</h2>
+
+<p><b>About Astigmatism</b></p>
+
+<p>The human eye is best able to focus if the cornea (the front clear window of the eye) is round like a basketball. Astigmatism occurs when the cornea has an oval shape like a football. This causes light rays entering the eye to be focused at more than one point on the retina, causing a reduction in vision. Many patients suffer some degree of astigmatism and never experience truly clear vision, not knowing what they are missing. Symptoms of astigmatism include: image distortion and shadows, double vision, tilted images, light sensitivity, glare, and tired eyes.</p>
+
+<h2>What can be done?</h2>
+
+<p>Fortunately, advances in eye surgery have led to techniques that can reduce or eliminate your astigmatism. After careful, detailed measurements of your cornea, micro incisions can be made along the more highly curved, or "steep" portions of the cornea. This allows those areas to flatten out, giving the cornea a more desirable round shape and better vision.</p>
+
+<h2>But my doctor recommends I undergo cataract surgery...</h2>
+
+<p>Cataract surgery is the ideal time to correct any astigmatism. The painless micro incisions to treat the astigmatism can be performed at the completion of your cataract procedure.  Patients enjoy the convenience of having both procedures simultaneously, and give themselves the best chance of clear vision after surgery.</p>
+
+<p>Cataract surgery alone can correct only nearsightedness or farsightedness, but not astigmatism. Thus patients may not truly experience their full visual potential if the astigmatism is not also corrected.</p>
+
+<h2>What benefits could I experience?</h2>
+
+<p>First and foremost, by reducing or eliminating your astigmatism at the time of cataract surgery, you improve your chances of not needing any glasses for distance vision after surgery. If you do need glasses, they will be lighter and thinner than before surgery, and often less expensive. You also may experience greater visual comfort, as glare, image distortion, and eye strain are reduced. While no procedure is perfect, Dr. Bias has years of experience in successfully treating astigmatism at the time of cataract removal. Patients should remember they will typically still need reading glasses after their cataract removal, whether or not the astigmatism was treated. </p>
+
+<h2>Is this service covered by my insurance?</h2>
+
+<p>Unfortunately, Medicare and most other major insurance carriers do not cover "refractive" services. This is why you must make a separate payment for your glasses check at the time of your examination. Keeping with this policy, astigmatism treatment at the time of cataract surgery is also typically not covered. </p>
+
+<p>However, as the leader in cataract care in the St. Louis area, Visionary Eyecare & Surgery is pleased to offer this valuable service for a small additional fee. Because the measurements can be obtained during your pre-operative evaluation, and the procedure is carried out in conjunction with your cataract surgery, we are able to pass these savings on to you. And all for a fraction of the cost of traditional laser vision correction procedures.</p>
+
+<h2>The Value of Better Vision...</h2>
+
+<p>Better vision at distance without glasses, save money on glasses after surgery, and an improved quality of life - all with a painless, low risk, economical procedure - but only at the time of your cataract surgery!</p>
+
+<p>Ask Dr. Bias if this treatment can help you see better, today!</p>
+
+<!-- picture of bias -->
+
+</div></div></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="#top" onmousedown="javascript: document.getElementById('botox').style.display='none'; document.getElementById('cataract').style.display=''; document.getElementById('lasik').style.display='none'; document.getElementById('ck').style.display='none'; document.getElementById('glaucoma').style.display='none'; document.getElementById('retinal').style.display='none'; document.getElementById('astig2').style.display='none';"><img src="images/services/services03.gif" width="342" height="22" border="0" alt=""></a></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="#" onmousedown="javascript: document.getElementById('botox').style.display='none'; document.getElementById('cataract').style.display='none'; document.getElementById('lasik').style.display=''; document.getElementById('ck').style.display='none'; document.getElementById('glaucoma').style.display='none'; document.getElementById('retinal').style.display='none'; document.getElementById('astig2').style.display='none';"><img src="images/services/services04.gif" width="342" height="25" border="0" alt=""></a></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="#" onmousedown="javascript: document.getElementById('botox').style.display='none'; document.getElementById('cataract').style.display='none'; document.getElementById('lasik').style.display='none'; document.getElementById('ck').style.display=''; document.getElementById('glaucoma').style.display='none'; document.getElementById('retinal').style.display='none'; document.getElementById('astig2').style.display='none';"><img src="images/services/services05.gif" width="342" height="25" border="0" alt=""></a></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="#" onmousedown="javascript: document.getElementById('botox').style.display='none'; document.getElementById('cataract').style.display='none'; document.getElementById('lasik').style.display='none'; document.getElementById('ck').style.display='none'; document.getElementById('glaucoma').style.display=''; document.getElementById('retinal').style.display='none'; document.getElementById('astig2').style.display='none';"><img src="images/services/services06.gif" width="342" height="26" border="0" alt=""></a></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="#" onmousedown="javascript: document.getElementById('botox').style.display='none'; document.getElementById('cataract').style.display='none'; document.getElementById('lasik').style.display='none'; document.getElementById('ck').style.display='none'; document.getElementById('glaucoma').style.display='none'; document.getElementById('retinal').style.display=''; document.getElementById('astig2').style.display='none';"><img src="images/services/services07.gif" width="342" height="24" border="0" alt=""></a></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="#" onmousedown="javascript: document.getElementById('botox').style.display=''; document.getElementById('cataract').style.display='none'; document.getElementById('lasik').style.display='none'; document.getElementById('ck').style.display='none'; document.getElementById('glaucoma').style.display='none'; document.getElementById('retinal').style.display='none'; document.getElementById('astig2').style.display='none';"><img src="images/services/services08.gif" width="342" height="25" border="0" alt=""></a></td>
+	
+	</tr>
+	<tr>
+		<td>
+			<img src="images/services/services09.jpg" width="342" height="244" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="5">
+        	<div style="background:url(images/footers/footer.jpg); width:100%; height:65px;">
+
+        </td>
+	</tr>
+</table>
+
+
+
+</center>
+
+</body>
+</html>
+			
+	
+	
+	
